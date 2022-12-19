@@ -1,19 +1,19 @@
-# Kandy Link Android SDK - User Guide
+# Ribbon WebRTC Android SDK - User Guide
 Version Number: **$SDK_VERSION$**
 <br>
 Revision Date: **October 31, 2022**
 
 ## Mobile SDK overview
 
-The SPiDR/Kandy Link Mobile Software Development Kit (SDK) defines a library implementation supporting SPiDR platform features like registration, notification, call management, instant message, presence management, and WebRTC on Android. You can use this library implementation to integrate SPiDR/Kandy Link services and WebRTC into your native mobile applications to create new, innovative user experiences.
+The Ribbon WebRTC Mobile Software Development Kit (SDK) defines a library implementation supporting SPiDR platform features like registration, notification, call management, instant message, presence management, and WebRTC on Android. You can use this library implementation to integrate Ribbon WebRTC GW services and WebRTC into your native mobile applications to create new, innovative user experiences.
 
 The Mobile SDK has the following characteristics:
 
-* Supports REST over HTTP/HTTPS for integration with the presentation layer of SPiDR/Kandy Link
+* Supports REST over HTTP/HTTPS for integration with the presentation layer of Ribbon WebRTC GW
 * Supports WebSocket for notification
 * Built and distributed as a standard library structure for easy use in mobile applications
 * Most features are implemented based on factory and singleton design patterns
-* Access to REST APIs provided by Ribbon's Kandy platform
+* Access to REST APIs provided by Ribbon's WebRTC GW platform
 
 See [Appendix A: High-level Mobile SDK structure](#appendix-a-high-level-mobile-sdk-structure) for a high-level view of the Mobile SDK and its sub-modules.
 
@@ -34,7 +34,7 @@ The following items need to be complete prior to beginning work on your applicat
 
 * Your Android Studio development environment is set up and ready for new projects.
 * You are familiar with Android development fundamentals.
-* You know the IP address and port of the SPiDR/Kandy Link server.
+* You know the IP address and port of the Ribbon WebRTC GW server.
 
 <div class="page-break"></div>
 
@@ -83,7 +83,7 @@ allprojects {
     jcenter()
 
   	maven {
- 	    url "https://raw.githubusercontent.com/Kandy-IO/kandy-link-android-sdk/master/dist/"
+ 	    url "https://raw.githubusercontent.com/RibbonCommunications/webrtc-android-sdk/master/dist/"
     }
   }
 }
@@ -94,19 +94,19 @@ allprojects {
 2. Add dependency of MobileSDK to your app level **build.gradle** file.
 
 ```groovy
-implementation 'com.kandy.mobile:kandylinkmobilesdk:$SDK_VERSION$ '
+implementation 'com.ribbon.mobile:ribbonwebrtcsdk:$SDK_VERSION$ '
 ```
 
 ![alt text](images/get_started_5.png "")
 
 <hr/>
 <h5>NOTE</h5>
-Check latest version of MobileSDK from <a href="https://github.com/Kandy-IO/kandy-link-android-sdk">GitHub</a>.
+Check latest version of MobileSDK from <a href="https://github.com/RibbonCommunications/webrtc-android-sdk">GitHub</a>.
 <hr/>
 
 #### Adding the dependency manually
 
-1. Download latest MobileSDK version from [GitHub](https://github.com/Kandy-IO/kandy-link-android-sdk/tree/$SDK_VERSION$/dist/com/kandy/mobile/kandylinkmobilesdk/$SDK_VERSION$) and copy **aar** file to your project **lib** folder.
+1. Download latest MobileSDK version from [GitHub](https://github.com/RibbonCommunications/webrtc-android-sdk/tree/$SDK_VERSION$/dist/com/ribbon/mobile/ribbonwebrtcsdk/$SDK_VERSION$) and copy **aar** file to your project **lib** folder.
 
 ![alt text](images/get_started_6.png "")
 
@@ -123,7 +123,7 @@ flatDir {
 3. Add dependency of MobileSDK to your app level **build.gradle** file with **@aar** prefix.
 
 ```groovy
-implementation 'com.kandy.mobile:kandylinkmobilesdk:$SDK_VERSION$@aar'
+implementation 'com.ribbon.mobile:ribbonwebrtcsdk:$SDK_VERSION$@aar'
 ```
 
 ![alt text](images/get_started_8.png "")
@@ -740,9 +740,9 @@ public class Demo {
         configuration.setUsername("username");
         //password for authorization
         configuration.setPassword("password");
-        //server IP value for SPiDR/Kandy Link
+        //server IP value for WebRTC GW
         configuration.setRestServerIp("$SUBSCRIPTIONFQDN$");
-        //server port value for SPiDR/Kandy Link
+        //server port value for WebRTC GW
         configuration.setRestServerPort(443);
 
          //IP used in websocket connection creation
@@ -750,7 +750,7 @@ public class Demo {
         //port used in websocket connection creation
         configuration.setWebSocketServerPort(443);
 
-        // SPiDR/Kandy Link TURN server using udp transport in WebRTC's peer connection
+        // WebRTC GW TURN server using udp transport in WebRTC's peer connection
         ICEServers iceServers = new ICEServers();
         iceServers.addICEServer("$TURNSERVER1$");
         iceServers.addICEServer("$TURNSERVER2$");
@@ -775,9 +775,9 @@ class Demo{
         configuration.username = "username"
         //password for authorization
         configuration.password = "password"
-        //server IP value for SPiDR/Kandy Link
+        //server IP value for WebRTC GW
         configuration.restServerIp = ""$SUBSCRIPTIONFQDN$""
-        //server port value for SPiDR/Kandy Link
+        //server port value for WebRTC GW
         configuration.restServerPort = 443
 
         //IP used in websocket connection creation
@@ -785,7 +785,7 @@ class Demo{
         //port used in websocket connection creation
         configuration.webSocketServerPort = 443
 
-        //SPiDR/Kandy Link TURN server using udp transport in WebRTC's peer connection
+        //WebRTC GW Link TURN server using udp transport in WebRTC's peer connection
         val iceServers = ICEServers()
         iceServers.addICEServer("$TURNSERVER1$")
         iceServers.addICEServer("$TURNSERVER2$")
@@ -903,9 +903,9 @@ public class LogHelper {
     public static void saveLog() {
         if (isExternalStorageWritable()) {
 
-            File appDirectory = new File(Environment.getExternalStorageDirectory() + "/KandyLinkDemoApp");
+            File appDirectory = new File(Environment.getExternalStorageDirectory() + "/WebRTCSDKDemoApp");
             File logDirectory = new File(appDirectory + "/log");
-            LogHelper.logFile = new File(logDirectory, "KandyLinkAndroidLogs" + ".txt");
+            LogHelper.logFile = new File(logDirectory, "WebRTCSDKAndroidLogs" + ".txt");
 
             // create app folder
             if (!appDirectory.exists()) {
@@ -956,9 +956,9 @@ object LogHelper {
         when {
             isExternalStorageWritable -> {
                 val appDirectory =
-                    File(Environment.getExternalStorageDirectory().toString() + "/KandyLinkDemoApp")
+                    File(Environment.getExternalStorageDirectory().toString() + "/WebRTCSDKDemoApp")
                 val logDirectory = File("$appDirectory/log")
-                logFile = File(logDirectory, "KandyLinkAndroidLogs" + ".txt")
+                logFile = File(logDirectory, "WebRTCSDKAndroidLogs" + ".txt")
 
                 // create app folder
                 if (!appDirectory.exists()) {
@@ -1006,7 +1006,7 @@ object LogHelper {
 
 ## Registration Service
 
-MobileSDK should be registered to SPiDR/Kandy Link before using any other services.
+MobileSDK should be registered to WebRTC GW before using any other services.
 
 ### Register the client
 
@@ -1014,10 +1014,10 @@ Use the `registerToServer` method to register the client to the server with the 
 
 After the client is registered, the notification state is "CONNECTED". The client will try to stay in "CONNECTED" states until the client is unregistered.
 
-The registration service renews registration according to the expiration time with the help of SPiDR/Kandy Link's ping messages. The `getExpirationTime` method may be called after successful registration to retrieve the expiration time (in seconds) for registration.
+The registration service renews registration according to the expiration time with the help of WebRTC GW's ping messages. The `getExpirationTime` method may be called after successful registration to retrieve the expiration time (in seconds) for registration.
 
 
-###### Example: Registering to SPiDR/Kandy Link
+###### Example: Registering to WebRTC GW
 
 <!-- tabs:start -->
 
@@ -1087,16 +1087,16 @@ val registrationService = ServiceProvider.getInstance(applicationContext).regist
 
 ### Register the client with HMAC Token
 
-MobileSDK can register to SPiDR/Kandy Link server with a valid HMAC Token obtained from SPiDR/Kandy Link. You can get information on how to get HMAC Token, see [here](#appendix-f-obtaining-a-hmac-token).
+MobileSDK can register to WebRTC GW server with a valid HMAC Token obtained from WebRTC GW. You can get information on how to get HMAC Token, see [here](#appendix-f-obtaining-a-hmac-token).
 
 Use the `registerToServer` method to register the client to the server with the values set in configuration. Failure and success calls are transmitted by the `OnCompletionListener` interface, which can be `null`. The `onSuccess` callback of the `RegistrationApplicationListener` is called after the registration request succeeds and the notification channel is connected.
 
 After the client is registered, the notification state is "CONNECTED". The client will try to stay in "CONNECTED" states until the client is unregistered. After registering with HMAC Token, in case the notification state is "DISCONNECTED", you must obtain a new HMAC token to register again. Because the obtained HMAC Tokens are disposable.
 
-The registration service renews registration according to the expiration time with the help of SPiDR/Kandy Link's ping messages. The `getExpirationTime` method may be called after successful registration to retrieve the expiration time (in seconds) for registration.
+The registration service renews registration according to the expiration time with the help of WebRTC GW's ping messages. The `getExpirationTime` method may be called after successful registration to retrieve the expiration time (in seconds) for registration.
 
 
-###### Example: Registering to SPiDR/Kandy Link with HMAC Token
+###### Example: Registering to WebRTC GW with HMAC Token
 
 <!-- tabs:start -->
 
@@ -1173,7 +1173,7 @@ registrationService.registerToServer(3600, token, object:OnCompletionListener{
 
 Use the unregisterFromServer method to unregister the client from the server. Failure and success calls are transmitted by the `OnCompletionListener` interface, which can be null. After the client is unregistered, the notification state is "DISCONNECTED".
 
-###### Example: Unregistering from SPiDR/Kandy Link
+###### Example: Unregistering from WebRTC GW
 
 <!-- tabs:start -->
 
@@ -1335,15 +1335,15 @@ class CallActivity : AppCompatActivity(), RegistrationApplicationListener, CallA
 
 #### Adding STUN/TURN servers
 
-SPiDR/Kandy Link provides TURN server support for media relay between two WebRTC endpoints in core version 3.0 and later. The ICEServers property in the Configuration class is used to store the ICE servers list; more than one ICEServer can exist in this property.
+WebRTC GW provides TURN server support for media relay between two WebRTC endpoints in core version 3.0 and later. The ICEServers property in the Configuration class is used to store the ICE servers list; more than one ICEServer can exist in this property.
 
-##### Adding SPiDR's (Kandy Link) TURN server
+##### Adding WebRTC GW TURN server
 
-After registration, the Mobile SDK gets default credentials from SPiDR/Kandy Link for the TURN servers and updates the defaultICEUsername and defaultICEPassword configuration properties. The list of ICEServers and their credentials are added to the PeerConnection when creating a call.
+After registration, the Mobile SDK gets default credentials from WebRTC GW for the TURN servers and updates the defaultICEUsername and defaultICEPassword configuration properties. The list of ICEServers and their credentials are added to the PeerConnection when creating a call.
 
-The following code sample will request TURN server credentials from SPiDR/Kandy Link and update the configuration instance.
+The following code sample will request TURN server credentials from WebRTC GW and update the configuration instance.
 
-**Note:** If your SPiDR/Kandy Link core version does not have TURN Server support, adding a TURN server without a username and password will cause the registration request to fail.
+**Note:** If your WebRTC GW core version does not have TURN Server support, adding a TURN server without a username and password will cause the registration request to fail.
 
 ###### Example: Adding STUN/TURN server
 
@@ -1375,7 +1375,7 @@ Configuration.getInstance().iceServers = iceServers
 
 ##### Adding an external TURN/STUN server
 
-You also have the option of using external TURN/STUN servers while establishing calls rather than SPiDR's (Kandy Link) TURN server(s). The ICEServers property will store the address and username/password for the server(s).
+You also have the option of using external TURN/STUN servers while establishing calls rather than WebRTC GW TURN server(s). The ICEServers property will store the address and username/password for the server(s).
 
 Use the addICEServer(iceServerURL, username, password) method of the ICEServers object to define credentials.
 
@@ -1670,7 +1670,7 @@ fun callExample(){
 
 #### Receive an incoming call
 
-When incoming call received from SPiDR/Kandy Link, `CallApplicationListener` will be notified via `incomingCall` method. Incoming call can be accepted, rejected, ignored or forwarded to another user. When call is ignored, listener will not be notified about that call anymore. If incoming call will be accepted, `localVideoView` and `remoteVideoView` should be assigned to related views.
+When incoming call received from WebRTC GW, `CallApplicationListener` will be notified via `incomingCall` method. Incoming call can be accepted, rejected, ignored or forwarded to another user. When call is ignored, listener will not be notified about that call anymore. If incoming call will be accepted, `localVideoView` and `remoteVideoView` should be assigned to related views.
 
 ###### Example: Accepting incoming call
 
@@ -1932,8 +1932,8 @@ override fun endCallFailed(call: CallInterface?, error: MobileError?) {
 
 #### End call with reason
 
-Applications can use the `endCall` API to send the end call reason to SPiDR/Kandy Link, then SPiDR/Kandy Link will send message with the reason to the remote user. The remote user gets the reason using the `callStatusChanged` API.
-If the call end reason string length exceeds the character limitation defined in SPiDR/Kandy Link Core, then SPiDR/Kandy Link Core will not send the excess characters.
+Applications can use the `endCall` API to send the end call reason to WebRTC GW, then WebRTC GW will send message with the reason to the remote user. The remote user gets the reason using the `callStatusChanged` API.
+If the call end reason string length exceeds the character limitation defined in WebRTC GW Core, then WebRTC GW Core will not send the excess characters.
 
 ###### Example: End call with reason
 
@@ -1980,7 +1980,7 @@ override fun callStatusChanged(callInterface: CallInterface, callState: CallStat
 
 #### Supported call end reasons
 
-When an endCall notification is received from SPiDR/Kandy Link, the Mobile SDK forwards the status code (statusCode) and status reason (reason) to the application layer, informing the user why the call has ended.
+When an endCall notification is received from WebRTC GW, the Mobile SDK forwards the status code (statusCode) and status reason (reason) to the application layer, informing the user why the call has ended.
 
 Mobile SDK-specific status codes and reasons sent to the application layer include:
 
@@ -2847,7 +2847,7 @@ fun changeVideoResolutionAndPosition () {
 
 #### Send DTMF (Dual-Tone Multi-Frequency) signals
 
-The Mobile SDK supports sending Dual-Tone Multi-Frequency (DTMF) signals to an Interactive Voice Response (IVR) system via the SPiDR/Kandy Link Media Broker. This allows callers to enter passcodes on active or ringing calls. Available keys for tones include 0-9, *, #, A, B, C, and D, as outlined in RFC 4733. When remote party does't suport out-of-band DTMF, the API method will return false.
+The Mobile SDK supports sending Dual-Tone Multi-Frequency (DTMF) signals to an Interactive Voice Response (IVR) system via the WebRTC GW Media Broker. This allows callers to enter passcodes on active or ringing calls. Available keys for tones include 0-9, *, #, A, B, C, and D, as outlined in RFC 4733. When remote party does't suport out-of-band DTMF, the API method will return false.
 
 **Note:** This feature only provides the functionality for sending DTMF signals. It does not include the functionality for getting keypad input or for playing key press volume.
 
@@ -3197,7 +3197,7 @@ The default value of this method is AUTO. If you want to change this value, you 
 
 Possible values of the ringingFeedbackOption configuration parameter are APP, SERVER and AUTO.
 
-When ringingFeedbackOption is SERVER, SPiDR/Kandy Link sends the Ringing notification to the caller immediately after sending the callStart notification to the callee.
+When ringingFeedbackOption is SERVER, WebRTC GW sends the Ringing notification to the caller immediately after sending the callStart notification to the callee.
 
 When ringingFeedbackOption is APP, Ringing Feedback is reponsibility of application.
 
@@ -4006,7 +4006,7 @@ Configuration.getInstance().setAudioCodecConfigurations(config)
 
 #### Receive internal error notifications
 
-Applications can listen for internal error notifications between the Mobile SDK and SPiDR/Kandy Link using the `onInternalError` callback method in the `RegistrationApplicationListener`. The error message includes the error reason and the component on which the error occurred. The following shows the possible internal error causes and their associated component tag values.
+Applications can listen for internal error notifications between the Mobile SDK and WebRTC GW using the `onInternalError` callback method in the `RegistrationApplicationListener`. The error message includes the error reason and the component on which the error occurred. The following shows the possible internal error causes and their associated component tag values.
 
 | Error Case         | Component Tag                                                   |
 |--------------------|---------------------------------------------------------------|
@@ -4173,9 +4173,9 @@ public class CallStatisticsHelper {
     private static ArrayList<StatisticsModel> callStatistics = new ArrayList<>();
 
     public static void clearFile() {
-        //clear the KandyLinkAndroidCallStatistics.txt first
+        //clear the WebRTCSDKAndroidCallStatistics.txt first
         File externalFilesDir = BasicSDKDemo.appContext.getExternalFilesDir(null);
-        callStatisticsFile = new File(externalFilesDir, "KandyLinkSDKAndroidCallStatistics" + ".txt");
+        callStatisticsFile = new File(externalFilesDir, "WebRTCSDKAndroidCallStatistics" + ".txt");
 
         PrintWriter writer;
         try {
@@ -4227,7 +4227,7 @@ public class CallStatisticsHelper {
         if (isExternalStorageWritable()) {
 
             File externalFilesDir = BasicSDKDemo.appContext.getExternalFilesDir(null);
-            callStatisticsFile = new File(externalFilesDir, "KandyLinkSDKAndroidCallStatistics" + ".txt");
+            callStatisticsFile = new File(externalFilesDir, "WebRTCSDKAndroidCallStatistics" + ".txt");
 
             if (!callStatisticsFile.exists()) {
                 try {
@@ -4291,10 +4291,10 @@ object CallStatisticsHelper {
         private set
 
     fun clearFile() {
-        //clear the KandyLinkAndroidCallStatistics.txt first
+        //clear the WebRTCSDKAndroidCallStatistics.txt first
         val appDirectory = File(Environment.getExternalStorageDirectory().toString() + "/BasicSDKDemoApp")
         val statisticsDirectory = File("$appDirectory/statistics")
-        val statisticsFile = File(statisticsDirectory, "KandyLinkSDKAndroidCallStatistics" + ".txt")
+        val statisticsFile = File(statisticsDirectory, "WebRTCSDKAndroidCallStatistics" + ".txt")
         val writer: PrintWriter
         try {
             writer = PrintWriter(statisticsFile)
@@ -4311,7 +4311,7 @@ object CallStatisticsHelper {
             isExternalStorageWritable -> {
                 val appDirectory = File(Environment.getExternalStorageDirectory().toString() + "/BasicSDKDemoApp")
                 val statisticsDirectory = File("$appDirectory/statistics")
-                callStatisticsFile = File(statisticsDirectory, "KandyLinkSDKAndroidCallStatistics" + ".txt")
+                callStatisticsFile = File(statisticsDirectory, "WebRTCSDKAndroidCallStatistics" + ".txt")
 
                 //create app folder
                 if (!appDirectory.exists()) {
@@ -4854,9 +4854,9 @@ class PushModule : FirebaseMessagingService, PushSubscriptionListener {
 
 
 ## Public Request Service
-Sending requests via Kandylink with the parameters given in the appropriate format.
+Sending requests via WebRTC GW with the parameters given in the appropriate format.
 ### Fetch API
-Kandylink needs three parameters to use this API.
+WebRTC GW needs three parameters to use this API.
 * **RequestInfo:** RequestInfo includes the information required in the request's body to be sent
 * **ResourceURL:** ResourceURL is the information of which endpoint the request will be sent to
 * **MethodType:** MethodType defines which REST method type will use (Get, Put, Post, Delete)
@@ -5028,7 +5028,7 @@ public class Demo {
         //port used in websocket connection creation
         configuration.setWebSocketServerPort(443);
 
-        // SPiDR/Kandy Link TURN server in WebRTC's peer connection
+        // WebRTC GW TURN server in WebRTC's peer connection
         ICEServers iceServers = new ICEServers();
         iceServers.addICEServer("$TURNSERVER1$");
         iceServers.addICEServer("$TURNSERVER2$");
@@ -5079,7 +5079,7 @@ class Demo {
         //port used in websocket connection creation
         configuration.webSocketServerPort = 443;
 
-        // SPiDR/Kandy Link TURN server in WebRTC's peer connection
+        // WebRTC GW TURN server in WebRTC's peer connection
         val iceServers = ICEServers()
         iceServers.addICEServer("$TURNSERVER1$")
         iceServers.addICEServer("$TURNSERVER2$")
@@ -5220,7 +5220,7 @@ This configuration obfuscates the MobileSDK API as much as possible while avoidi
 
 ### Appendix F: Obtaining a HMAC Token
 
-HMAC Token is a token that allows you to register on the SPiDR/Kandy Link server. This section contains information about how to obtain a HMAC Token from SPiDR/Kandy Link server. In order to obtain HMAC token, the user to receive HMAC token must have the necessary settings made on the Kandy Link web portal. The adapter and authentication scheme key values obtained as a result of the settings made on the portal will be used to obtain the HMAC token. 
+HMAC Token is a token that allows you to register on the WebRTC GW server. This section contains information about how to obtain a HMAC Token from WebRTC GW server. In order to obtain HMAC token, the user to receive HMAC token must have the necessary settings made on the WebRTC GW web portal. The adapter and authentication scheme key values obtained as a result of the settings made on the portal will be used to obtain the HMAC token. 
 
 <!-- tabs:start -->
 

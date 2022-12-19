@@ -1,6 +1,6 @@
 # Change Log
 
-Kandy Link Android SDK change log.
+Ribbon WebRTC Android SDK change log.
 
 - This project adheres to [Semantic Versioning](http://semver.org/).
 - This change log follows [keepachangelog.com](http://keepachangelog.com/) recommendations.

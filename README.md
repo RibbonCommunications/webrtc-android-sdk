@@ -1,20 +1,20 @@
-# Kandy Link Android SDK
+# Ribbon WebRTC Android SDK
 
 <p>
-    <img alt="GitHub release" src="https://img.shields.io/github/v/release/kandy-io/kandy-link-android-sdk">
+    <img alt="GitHub release" src="https://img.shields.io/github/v/release/ribboncommunications.github.io/webrtc-android-sdk">
 </p>
 
 ## Install
 
-To integrate *Kandy Link Android SDK* to your project, please follow [this link](https://kandy-io.github.io/kandy-link-android-sdk/tutorials/#/?id=adding-mobilesdk-dependency-to-your-project) 
+To integrate *Ribbon WebRTC Android SDK* to your project, please follow [this link](https://ribboncommunications.github.io/webrtc-android-sdk/#/?id=adding-mobilesdk-dependency-to-your-project) 
 
 ## Documentation
 
 The information about tutorials and documents can be found in the links below
 
-* Documents: [API Docs](https://kandy-io.github.io/kandy-link-android-sdk/docs)
+* Documents: [API Docs](https://ribboncommunications.github.io/webrtc-android-sdk/docs)
 
-* Tutorials: Choose your configuration ( [Kandy-US](https://kandy-io.github.io/kandy-link-android-sdk/tutorials/?SUBSCRIPTIONFQDN=webrtc-na.kandy.io&WEBSOCKETFQDN=webrtc-na.kandy.io&ICESERVER1=turn-na-1.kandy.io&ICESERVER2=turn-na-2.kandy.io) | [Kandy-EMEA](https://kandy-io.github.io/kandy-link-android-sdk/tutorials/?SUBSCRIPTIONFQDN=webrtc-em.kandy.io&WEBSOCKETFQDN=webrtc-em.kandy.io&ICESERVER1=turn-em-1.kandy.io&ICESERVER2=turn-em-2.kandy.io) | [Kandy-UAE](https://kandy-io.github.io/kandy-link-android-sdk/tutorials/?SUBSCRIPTIONFQDN=ct-webrtc.etisalat.ae&WEBSOCKETFQDN=ct-webrtc.etisalat.ae&ICESERVER1=ct-turn1.etisalat.ae&ICESERVER2=ct-turn2.etisalat.ae) )
+* Tutorials: Choose your configuration ( [Kandy-US](https://ribboncommunications.github.io/webrtc-android-sdk/tutorials/?SUBSCRIPTIONFQDN=webrtc-na.kandy.io&WEBSOCKETFQDN=webrtc-na.kandy.io&ICESERVER1=turn-na-1.kandy.io&ICESERVER2=turn-na-2.kandy.io) | [Kandy-EMEA](https://ribboncommunications.github.io/webrtc-android-sdk/tutorials/?SUBSCRIPTIONFQDN=webrtc-em.kandy.io&WEBSOCKETFQDN=webrtc-em.kandy.io&ICESERVER1=turn-em-1.kandy.io&ICESERVER2=turn-em-2.kandy.io) | [Kandy-UAE](https://ribboncommunications.github.io/webrtc-android-sdk/tutorials/?SUBSCRIPTIONFQDN=ct-webrtc.etisalat.ae&WEBSOCKETFQDN=ct-webrtc.etisalat.ae&ICESERVER1=ct-turn1.etisalat.ae&ICESERVER2=ct-turn2.etisalat.ae) )
 
 ## Compatibility
 
@@ -22,11 +22,11 @@ Compatible Android OS versions :
 
 * Android 5+
 
-Compatible KandyLink Server versions :
+Compatible WebRTC GW Server versions :
 
-* Kandy Link 4.8.1
+* WebRTC GW 4.8.1
 
-* Kandy Link 4.9
+* WebRTC GW 4.9
 
 Tested on :
 
