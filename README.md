@@ -26,7 +26,7 @@ Compatible WebRTC GW Server versions :
 
 * WebRTC GW 4.8.1
 
-* WebRTC GW 4.9
+* WebRTC GW 4.9.1
 
 Tested on :
 
