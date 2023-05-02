@@ -5,7 +5,7 @@ Revision Date: **March 27, 2023**
 
 ## Mobile SDK overview
 
-The Ribbon WebRTC Mobile Software Development Kit (SDK) defines a library implementation supporting SPiDR platform features like registration, notification, call management, instant message, presence management, and WebRTC on Android. You can use this library implementation to integrate Ribbon WebRTC GW services and WebRTC into your native mobile applications to create new, innovative user experiences.
+The Ribbon WebRTC Mobile Software Development Kit (SDK) defines a library implementation supporting WebRTC Gateway platform features like registration, notification, call management, instant message, presence management, and WebRTC on Android. You can use this library implementation to integrate Ribbon WebRTC GW services and WebRTC into your native mobile applications to create new, innovative user experiences.
 
 The Mobile SDK has the following characteristics:
 
@@ -265,9 +265,7 @@ public void configExample() {
 
     ICEServers iceServers = new ICEServers();
     iceServers.addICEServer("$TURNSERVER1$");
-    iceServers.addICEServer("$TURNSERVER2$");
     iceServers.addICEServer("$STUNSERVER1$");
-    iceServers.addICEServer("$STUNSERVER2$");
     configuration.setICEServers(iceServers);
 
     configuration.setWebSocketServerIp("$WEBSOCKETFQDN$");
@@ -286,9 +284,7 @@ fun configExample(){
 
         val iceServers = ICEServers()
         iceServers.addICEServer("$TURNSERVER1$")
-        iceServers.addICEServer("$TURNSERVER2$")
         iceServers.addICEServer("STUNSERVER1$")
-        iceServers.addICEServer("STUNSERVER2$")
         configuration.iceServers = iceServers
 
         configuration.webSocketServerIp = "$WEBSOCKETFQDN$"
@@ -753,9 +749,7 @@ public class Demo {
         // WebRTC GW TURN server using udp transport in WebRTC's peer connection
         ICEServers iceServers = new ICEServers();
         iceServers.addICEServer("$TURNSERVER1$");
-        iceServers.addICEServer("$TURNSERVER2$");
         iceServers.addICEServer("$STUNSERVER1$");
-        iceServers.addICEServer("$STUNSERVER2$");
         configuration.setICEServers(iceServers);
     }
 }
@@ -788,9 +782,7 @@ class Demo{
         //WebRTC GW Link TURN server using udp transport in WebRTC's peer connection
         val iceServers = ICEServers()
         iceServers.addICEServer("$TURNSERVER1$")
-        iceServers.addICEServer("$TURNSERVER2$")
         iceServers.addICEServer("$STUNSERVER1$")
-        iceServers.addICEServer("$STUNSERVER2$")
         configuration.iceServers = iceServers
     }
 }
@@ -1354,9 +1346,7 @@ The following code sample will request TURN server credentials from WebRTC GW an
 ```java
 ICEServers servers = new ICEServers();
 servers.addICEServer("$TURNSERVER1$");
-servers.addICEServer("$TURNSERVER2$");
 servers.addICEServer("$STUNSERVER1$");
-servers.addICEServer("$STUNSERVER2$");
 
 Configuration.getInstance().setICEServers(servers);
 ```
@@ -1366,9 +1356,7 @@ Configuration.getInstance().setICEServers(servers);
 ```kotlin
 val iceServers = ICEServers()
 iceServers.addICEServer("$TURNSERVER1$")
-iceServers.addICEServer("$TURNSERVER2$")
 iceServers.addICEServer("$STUNSERVER1$")
-iceServers.addICEServer("$STUNSERVER2$")
 Configuration.getInstance().iceServers = iceServers
 ```
 <!-- tabs:end -->
@@ -1417,8 +1405,6 @@ servers.addICEServer("$STUNSERVER1$")
 ```java
 ICEServers servers = Configuration.getInstance().getICEServers();
 servers.addICEServer("$TURNSERVER1$", "username", "password");
-servers.addICEServer("$TURNSERVER2$", "username", "password");
-servers.addICEServer("$TURNSERVER2$", "username", "password");
 ```
 
 #### ** Kotlin Code **
@@ -1426,8 +1412,6 @@ servers.addICEServer("$TURNSERVER2$", "username", "password");
 ```kotlin
 val servers = Configuration.getInstance().iceServers
 servers.addICEServer("$TURNSERVER1$", "username", "password")
-servers.addICEServer("$TURNSERVER2$", "username", "password")
-servers.addICEServer("$TURNSERVER2$", "username", "password")
 ```
 <!-- tabs:end -->
 
@@ -5016,9 +5000,9 @@ public class Demo {
         configuration.setUsername("username");
         //password for authorization
         configuration.setPassword("password");
-        //server IP value for SPiDR
+        //server IP value for Ribbon
         configuration.setRestServerIp("$SUBSCRIPTIONFQDN$");
-        //server port value for SPiDR
+        //server port value for Ribbon
         configuration.setRestServerPort(443);
         //logger implementation defined by the application
         configuration.setLogger(new DefaultLogUtility());
@@ -5031,9 +5015,7 @@ public class Demo {
         // WebRTC GW TURN server in WebRTC's peer connection
         ICEServers iceServers = new ICEServers();
         iceServers.addICEServer("$TURNSERVER1$");
-        iceServers.addICEServer("$TURNSERVER2$");
         iceServers.addICEServer("$STUNSERVER1$");
-        iceServers.addICEServer("$STUNSERVER2$");
 
         configuration.setICEServers(iceServers);
 
@@ -5041,7 +5023,7 @@ public class Demo {
         configuration.setICECollectionTimeout(4);
 
         //Set supported call features (ringing feedback)
-        //SPiDR server must support this feature
+        //Ribbon server must support this feature
         configuration.setRingingFeedbackOption(CLIENT);
 
         //Set one of the ice candidate negotiation types (ICE_VANILLA or ICE_TRICKLE)
@@ -5067,9 +5049,9 @@ class Demo {
         configuration.username = "username"
         //password for authorization
         configuration.password = "password"
-        //server IP value for SPiDR
+        //server IP value for Ribbon WebRTC Gateway 
         configuration.restServerIp = "$SUBSCRIPTIONFQDN$"
-        //server port value for SPiDR
+        //server port value for Ribbon WebRTC Gateway 
         configuration.restServerPort = 443
         //logger implementation defined by the application
         configuration.logger = DefaultLogUtility()
@@ -5082,9 +5064,7 @@ class Demo {
         // WebRTC GW TURN server in WebRTC's peer connection
         val iceServers = ICEServers()
         iceServers.addICEServer("$TURNSERVER1$")
-        iceServers.addICEServer("$TURNSERVER2$")
         iceServers.addICEServer("$STUNSERVER1$")
-        iceServers.addICEServer("$STUNSERVER2$")
         configuration.iceServers = iceServers
         
 
@@ -5092,7 +5072,7 @@ class Demo {
         configuration.iceCollectionTimeout = 4
 
         //Set supported call features (ringing feedback)
-        //SPiDR server must support this feature
+        //Ribbon WebRTC Gateway server must support this feature
         configuration.setRingingFeedbackOption = CLIENT;
 
         //Set one of the ice candidate negotiation types (ICE_VANILLA or ICE_TRICKLE)
