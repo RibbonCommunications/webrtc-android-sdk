@@ -1,7 +1,7 @@
 # Ribbon WebRTC Android SDK - User Guide
 Version Number: **$SDK_VERSION$**
 <br>
-Revision Date: **March 27, 2023**
+Revision Date: **May 30, 2023**
 
 ## Mobile SDK overview
 
@@ -4424,6 +4424,48 @@ currentCall?.getRTPStatistics {
             CallStatisticsHelper.saveStatistics(currentCall?.getId(), it)
         }
 ```
+<!-- tabs:end -->
+
+#### Use External Audio Source 
+
+The Mobile SDK can stream external audio sources to the remote peer(s) during a call instead of a device microphone.
+
+###### Example: Using external audio source
+
+<!-- tabs:start -->
+
+#### ** Java Code **
+
+```java
+Uri fileUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.sample_audio);
+// Play for one time
+call.setExternalAudioSourceWithFile(fileUri, 1, new ProcessListener() {
+    @Override
+    public void onSuccess() {
+        // audio transmission completed
+    }
+ 
+    @Override
+    public void onFailed(MobileError mobileError) {
+        // error handling
+    }
+});
+``` 
+#### ** Kotlin Code **
+
+```kotlin
+val fileUri = Uri.parse("android.resource://" + packageName + "/" + R.raw.sample_audio)
+// Play for one time
+call.setExternalAudioSourceWithFile(fileUri, 1, object : ProcessListener {
+    override fun onSuccess() {
+        // audio transmission completed
+    }
+    override fun onFailed(mobileError: MobileError) {
+         // error handling
+    }
+})
+```
+
 <!-- tabs:end -->
 
 
