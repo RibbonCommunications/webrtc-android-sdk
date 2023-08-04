@@ -3,7 +3,7 @@
   <groupId>com.ribbon.mobile</groupId>
   <artifactId>ribbonwebrtcsdk</artifactId>
   <versioning>
-    <release>6.15.0</release>
+    <release>6.16.0</release>
     <versions>
       <version>6.8.0</version>
       <version>6.9.0</version>
@@ -13,7 +13,8 @@
       <version>6.13.0</version>
       <version>6.14.0</version>
       <version>6.15.0</version>
+      <version>6.16.0</version>
     </versions>
-    <lastUpdated>20230704104109</lastUpdated>
+    <lastUpdated>20230804082505</lastUpdated>
   </versioning>
 </metadata>

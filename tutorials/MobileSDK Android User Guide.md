@@ -1,7 +1,7 @@
 # Ribbon WebRTC Android SDK - User Guide
 Version Number: **$SDK_VERSION$**
 <br>
-Revision Date: **July 04, 2023**
+Revision Date: **August 03, 2023**
 
 ## Mobile SDK overview
 
@@ -1323,6 +1323,13 @@ class CallActivity : AppCompatActivity(), RegistrationApplicationListener, CallA
     }
 }
 ```
+**Warning:** Starting from Android 14, the permission to send full-screen intent notifications using Notification.Builder.setFullScreenIntent is restricted to specific types of apps. Prior to Android 14, apps could automatically accept this permission by declaring the USE_FULL_SCREEN_INTENT permission in the AndroidManifest file. However, starting from Android 14, this permission is only granted to apps related to calling and alarms. The Google Play Store revokes the default USE_FULL_SCREEN_INTENT permission for apps that don't fit this category.
+
+You can use the new API NotificationManager.canUseFullScreenIntent to check if your app has this permission. If the permission is not granted, your app can use the ACTION_MANAGE_APP_USE_FULL_SCREEN_INTENT intent to open the settings page where users can grant the permission.
+
+**Warning:** If your app displays non-dismissable foreground notifications to users, Android 14 has introduced a behavior change that allows users to dismiss such notifications.
+
+ This change affects apps that prevent users from dismissing foreground notifications by using Notification.Builder#setOngoing(true) or NotificationCompat.Builder#setOngoing(true) and setting the Notification.FLAG_ONGOING_EVENT flag. The behavior of FLAG_ONGOING_EVENT has been modified to make these notifications actually dismissable by the user.
 <!-- tabs:end -->
 
 #### Adding STUN/TURN servers
@@ -2972,6 +2979,20 @@ Applications targeting API 28 and later should request `FOREGOUND_SERVICE` permi
 </manifest>
 ```
 ### Start a foreground service
+
+**Warning:** Starting Android 14, it must specify appropriate foreground service types.
+If no type is specified for a service in the manifest file and Android 14 is targeted, the system will throw a MissingForegroundServiceTypeException on the startForeground() call for that service.
+
+```xml
+<application ...>
+    <service
+        android:name=".MyMediaPlaybackService"
+        android:foregroundServiceType="mediaPlayback"
+        android:exported="false">
+    </service>
+</application>
+```
+
 if your app wants to access camera and microphone it should specify them as follows:
 ```xml
 <manifest>
