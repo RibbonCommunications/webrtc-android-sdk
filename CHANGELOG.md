@@ -4,10 +4,7 @@ Ribbon WebRTC Android SDK change log.
 
 - This project adheres to [Semantic Versioning](http://semver.org/).
 - This change log follows [keepachangelog.com](http://keepachangelog.com/) recommendations.
-## 6.18.0 - 2023-10-02
-
-### Added
-- Build Gradle version updated to 8.0 `KAE-1542`
+## 6.18.0 - 2023-10-04
 
 ## 6.17.0 - 2023-09-04
 
