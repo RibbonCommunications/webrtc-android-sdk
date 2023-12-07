@@ -4,6 +4,11 @@ Ribbon WebRTC Android SDK change log.
 
 - This project adheres to [Semantic Versioning](http://semver.org/).
 - This change log follows [keepachangelog.com](http://keepachangelog.com/) recommendations.
+## 6.20.0 - 2023-12-07
+
+### Added 
+- Upgrading WebRTC to M118. `KAE-1544`
+
 ## 6.19.0 - 2023-11-14
 
 ### Added 
