@@ -1,7 +1,7 @@
 # Ribbon WebRTC Android SDK
 
 <p>
-    <img alt="GitHub release" src="https://img.shields.io/github/v/release/ribboncommunications.github.io/webrtc-android-sdk">
+    <img alt="GitHub release" src="https://img.shields.io/github/v/release/RibbonCommunications/webrtc-android-sdk">
 </p>
 
 ## Install
