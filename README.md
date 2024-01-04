@@ -24,7 +24,7 @@ Compatible Android OS versions :
 
 Compatible WebRTC GW Server versions :
 
-* WebRTC GW 4.10.90
+* WebRTC GW 4.10.0
 
 * WebRTC GW 4.9.1
 
