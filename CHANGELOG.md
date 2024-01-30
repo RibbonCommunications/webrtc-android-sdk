@@ -4,6 +4,8 @@ Ribbon WebRTC Android SDK change log.
 
 - This project adheres to [Semantic Versioning](http://semver.org/).
 - This change log follows [keepachangelog.com](http://keepachangelog.com/) recommendations.
+## 6.22.0 - 2023-01-30
+
 ## 6.21.0 - 2023-12-29
 
 ## 6.20.0 - 2023-12-07
