@@ -4,14 +4,14 @@ Ribbon WebRTC Android SDK change log.
 
 - This project adheres to [Semantic Versioning](http://semver.org/).
 - This change log follows [keepachangelog.com](http://keepachangelog.com/) recommendations.
+## 6.22.1 - 2024-02-06
+
 ### Changed
 - Maven Artifactory server is changed
 
 ### Fixed
 - Maven Artifactory server is now reachable
 - Javadoc paths is reconfigured with requirements of Gradle 8.5-rc-1
-
-## 6.22.1 - 2024-02-06
 
 ## 6.22.0 - 2023-01-30
 
