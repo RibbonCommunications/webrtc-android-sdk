@@ -5,6 +5,11 @@ Ribbon WebRTC Android SDK change log.
 - This project adheres to [Semantic Versioning](http://semver.org/).
 - This change log follows [keepachangelog.com](http://keepachangelog.com/) recommendations.
 
+## 6.27.0 - 2024-06-24
+
+### Changed
+- Rest Manager migrated to Kotlin `KAE-1570`
+
 ## 6.26.0 - 2024-05-24
 
 ### Changed
