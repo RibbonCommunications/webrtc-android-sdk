@@ -4,6 +4,11 @@ Ribbon WebRTC Android SDK change log.
 
 - This project adheres to [Semantic Versioning](http://semver.org/).
 - This change log follows [keepachangelog.com](http://keepachangelog.com/) recommendations.
+## 6.30.0 - 2024-09-23
+
+### Changed
+- Call Service migrated to Kotlin `KAE-1580`
+
 ## 6.29.0 - 2024-08-20
 
 ### Changed
