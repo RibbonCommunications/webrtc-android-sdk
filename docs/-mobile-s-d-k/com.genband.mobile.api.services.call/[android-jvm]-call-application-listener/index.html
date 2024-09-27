@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>[androidJvm]CallApplicationListener</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<link href="../../../images/logo-icon.svg">
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            MobileSDK
+                    </a>
+            </div>
+            <div class="library-version">
+6.30.0            </div>
+        </div>
+        
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="MobileSDK::com.genband.mobile.api.services.call/CallApplicationListener///PointingToDeclaration//-509386322">
+  <div class="breadcrumbs"><a href="../../../index.html">MobileSDK</a><span class="delimiter">/</span><a href="../index.html">com.genband.mobile.api.services.call</a><span class="delimiter">/</span><span class="current">[androidJvm]CallApplicationListener</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Call</span><wbr></wbr><span>Application</span><wbr></wbr><span><span>Listener</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">CallApplicationListener</a></div><p class="paragraph">Interface for the application to receive call backs for Call operations.</p><p class="paragraph">After receiving the instance of CallServiceInterface implementation, this listener must be assigned.</p><p class="paragraph"><code class="lang-kotlin">CallApplicationListener listener = null; // assign to custom implementation </code> * <br></br> <code class="lang-kotlin">CallServiceInterface callService = ServiceProvider.getInstance().getCallService(); </code> *  <br></br> <code class="lang-kotlin">callService.setCallEventsListener(listener); </code> *</p><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">2.0.0</p></span></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-431709532%2FFunctions%2F-509386322" anchor-label="acceptCallFailed" id="-431709532%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="accept-call-failed.html"><span>accept</span><wbr></wbr><span>Call</span><wbr></wbr><span><span>Failed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-431709532%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="accept-call-failed.html"><span class="token function">acceptCallFailed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">incomingCall<span class="token operator">: </span><a href="../[android-jvm]-incoming-call-interface/index.html">IncomingCallInterface</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">error<span class="token operator">: </span><span data-unresolved-link="com.genband.mobile.api.utilities/MobileError///PointingToDeclaration/">MobileError</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Method invoked when attempt to accept an incoming call has failed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1485113465%2FFunctions%2F-509386322" anchor-label="acceptCallSucceed" id="1485113465%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="accept-call-succeed.html"><span>accept</span><wbr></wbr><span>Call</span><wbr></wbr><span><span>Succeed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1485113465%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="accept-call-succeed.html"><span class="token function">acceptCallSucceed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">incomingCall<span class="token operator">: </span><a href="../[android-jvm]-incoming-call-interface/index.html">IncomingCallInterface</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Method invoked when attempt to accept an incoming call has succeeded.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1442163122%2FFunctions%2F-509386322" anchor-label="callAdditionalInfoChanged" id="1442163122%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="call-additional-info-changed.html"><span>call</span><wbr></wbr><span>Additional</span><wbr></wbr><span>Info</span><wbr></wbr><span><span>Changed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1442163122%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="call-additional-info-changed.html"><span class="token function">callAdditionalInfoChanged</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">events<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Triggered when a detailed information is available that can be used on statistics</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1855075668%2FFunctions%2F-509386322" anchor-label="callStatusChanged" id="1855075668%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="call-status-changed.html"><span>call</span><wbr></wbr><span>Status</span><wbr></wbr><span><span>Changed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1855075668%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="call-status-changed.html"><span class="token function">callStatusChanged</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">callState<span class="token operator">: </span><span data-unresolved-link="com.genband.mobile.impl.services.call/CallState///PointingToDeclaration/">CallState</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Triggered when status of call changed to hold, end, unhold etc.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1107594603%2FFunctions%2F-509386322" anchor-label="endCallFailed" id="-1107594603%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="end-call-failed.html"><span>end</span><wbr></wbr><span>Call</span><wbr></wbr><span><span>Failed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1107594603%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="end-call-failed.html"><span class="token function">endCallFailed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">error<span class="token operator">: </span><span data-unresolved-link="com.genband.mobile.api.utilities/MobileError///PointingToDeclaration/">MobileError</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">This method is invoked when endCall has failed. This is the call back method for the endCall request</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1722560275%2FFunctions%2F-509386322" anchor-label="endCallSucceeded" id="1722560275%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="end-call-succeeded.html"><span>end</span><wbr></wbr><span>Call</span><wbr></wbr><span><span>Succeeded</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1722560275%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="end-call-succeeded.html"><span class="token function">endCallSucceeded</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">This method is invoked when endCall has succeeded. This is the call back method for the endCall request</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="203113967%2FFunctions%2F-509386322" anchor-label="errorReceived" id="203113967%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="error-received.html"><span>error</span><wbr></wbr><span><span>Received</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="203113967%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="brief "><p class="paragraph">Triggered when an error occurred related to the call service</p></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="error-received.html"><span class="token function">errorReceived</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">error<span class="token operator">: </span><span data-unresolved-link="com.genband.mobile.api.utilities/MobileError///PointingToDeclaration/">MobileError</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Triggered when an error occurred related to a call</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1074806247%2FFunctions%2F-509386322" anchor-label="establishCallFailed" id="1074806247%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="establish-call-failed.html"><span>establish</span><wbr></wbr><span>Call</span><wbr></wbr><span><span>Failed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1074806247%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="establish-call-failed.html"><span class="token function">establishCallFailed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">outgoingCall<span class="token operator">: </span><a href="../[android-jvm]-outgoing-call-interface/index.html">OutgoingCallInterface</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">error<span class="token operator">: </span><span data-unresolved-link="com.genband.mobile.api.utilities/MobileError///PointingToDeclaration/">MobileError</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">This method is invoked when establishCall has failed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1564402327%2FFunctions%2F-509386322" anchor-label="establishCallSucceeded" id="-1564402327%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="establish-call-succeeded.html"><span>establish</span><wbr></wbr><span>Call</span><wbr></wbr><span><span>Succeeded</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1564402327%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="establish-call-succeeded.html"><span class="token function">establishCallSucceeded</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">outgoingCall<span class="token operator">: </span><a href="../[android-jvm]-outgoing-call-interface/index.html">OutgoingCallInterface</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">This method is invoked when establishCall has succeeded.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1081700999%2FFunctions%2F-509386322" anchor-label="forwardCallFailed" id="-1081700999%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="forward-call-failed.html"><span>forward</span><wbr></wbr><span>Call</span><wbr></wbr><span><span>Failed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1081700999%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="forward-call-failed.html"><span class="token function">forwardCallFailed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-incoming-call-interface/index.html">IncomingCallInterface</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">error<span class="token operator">: </span><span data-unresolved-link="com.genband.mobile.api.utilities/MobileError///PointingToDeclaration/">MobileError</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Method invoked when attempt to forward an incoming call has failed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1142255133%2FFunctions%2F-509386322" anchor-label="forwardCallSucceeded" id="-1142255133%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="forward-call-succeeded.html"><span>forward</span><wbr></wbr><span>Call</span><wbr></wbr><span><span>Succeeded</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1142255133%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="forward-call-succeeded.html"><span class="token function">forwardCallSucceeded</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-incoming-call-interface/index.html">IncomingCallInterface</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Method invoked when attempt to forward an incoming call has succeeded.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-118625567%2FFunctions%2F-509386322" anchor-label="holdCallFailed" id="-118625567%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="hold-call-failed.html"><span>hold</span><wbr></wbr><span>Call</span><wbr></wbr><span><span>Failed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-118625567%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="hold-call-failed.html"><span class="token function">holdCallFailed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">error<span class="token operator">: </span><span data-unresolved-link="com.genband.mobile.api.utilities/MobileError///PointingToDeclaration/">MobileError</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Method invoked when attempt to hold a call has failed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1061040024%2FFunctions%2F-509386322" anchor-label="holdCallSucceed" id="-1061040024%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="hold-call-succeed.html"><span>hold</span><wbr></wbr><span>Call</span><wbr></wbr><span><span>Succeed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1061040024%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="hold-call-succeed.html"><span class="token function">holdCallSucceed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Method invoked when attempt to hold a call has succeeded.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-464613648%2FFunctions%2F-509386322" anchor-label="ignoreFailed" id="-464613648%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ignore-failed.html"><span>ignore</span><wbr></wbr><span><span>Failed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-464613648%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="ignore-failed.html"><span class="token function">ignoreFailed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">incomingCall<span class="token operator">: </span><a href="../[android-jvm]-incoming-call-interface/index.html">IncomingCallInterface</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">error<span class="token operator">: </span><span data-unresolved-link="com.genband.mobile.api.utilities/MobileError///PointingToDeclaration/">MobileError</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Method invoked when attempt to ignore a call has failed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="694345901%2FFunctions%2F-509386322" anchor-label="ignoreSucceed" id="694345901%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ignore-succeed.html"><span>ignore</span><wbr></wbr><span><span>Succeed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="694345901%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="ignore-succeed.html"><span class="token function">ignoreSucceed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">incomingCall<span class="token operator">: </span><a href="../[android-jvm]-incoming-call-interface/index.html">IncomingCallInterface</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Method invoked when attempt to ignore a call has succeeded.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="886416297%2FFunctions%2F-509386322" anchor-label="incomingCall" id="886416297%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="incoming-call.html"><span>incoming</span><wbr></wbr><span><span>Call</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="886416297%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="incoming-call.html"><span class="token function">incomingCall</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">incomingCall<span class="token operator">: </span><a href="../[android-jvm]-incoming-call-interface/index.html">IncomingCallInterface</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Triggered when an incoming call is received</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1366009422%2FFunctions%2F-509386322" anchor-label="joinFailed" id="1366009422%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="join-failed.html"><span>join</span><wbr></wbr><span><span>Failed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1366009422%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="join-failed.html"><span class="token function">joinFailed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">error<span class="token operator">: </span><span data-unresolved-link="com.genband.mobile.api.utilities/MobileError///PointingToDeclaration/">MobileError</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">This is the call back method for the join request. This method is invoked when join call has failed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1898942214%2FFunctions%2F-509386322" anchor-label="joinSucceeded" id="-1898942214%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="join-succeeded.html"><span>join</span><wbr></wbr><span><span>Succeeded</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1898942214%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="join-succeeded.html"><span class="token function">joinSucceeded</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">This is the call back method for the join request. This method is invoked when join call has succeeded.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1414392609%2FFunctions%2F-509386322" anchor-label="mediaAttributesChanged" id="-1414392609%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="media-attributes-changed.html"><span>media</span><wbr></wbr><span>Attributes</span><wbr></wbr><span><span>Changed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1414392609%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="media-attributes-changed.html"><span class="token function">mediaAttributesChanged</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">mediaAttributes<span class="token operator">: </span><span data-unresolved-link="com.genband.mobile.impl.services.call/MediaAttributes///PointingToDeclaration/">MediaAttributes</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">This is the call back method for any call's media attributes change on the CallDelegate.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="982412091%2FFunctions%2F-509386322" anchor-label="muteCallFailed" id="982412091%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="mute-call-failed.html"><span>mute</span><wbr></wbr><span>Call</span><wbr></wbr><span><span>Failed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="982412091%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="mute-call-failed.html"><span class="token function">muteCallFailed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">error<span class="token operator">: </span><span data-unresolved-link="com.genband.mobile.api.utilities/MobileError///PointingToDeclaration/">MobileError</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Method invoked when attempt to mute a call has failed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1714102834%2FFunctions%2F-509386322" anchor-label="muteCallSucceed" id="-1714102834%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="mute-call-succeed.html"><span>mute</span><wbr></wbr><span>Call</span><wbr></wbr><span><span>Succeed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1714102834%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="mute-call-succeed.html"><span class="token function">muteCallSucceed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Method invoked when attempt to mute a call has succeeded.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-149928465%2FFunctions%2F-509386322" anchor-label="notifyCallProgressChange" id="-149928465%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="notify-call-progress-change.html"><span>notify</span><wbr></wbr><span>Call</span><wbr></wbr><span>Progress</span><wbr></wbr><span><span>Change</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-149928465%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="notify-call-progress-change.html"><span class="token function">notifyCallProgressChange</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">This method is invoked when progress in call life-cycle changes.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1357498043%2FFunctions%2F-509386322" anchor-label="rejectCallFailed" id="1357498043%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="reject-call-failed.html"><span>reject</span><wbr></wbr><span>Call</span><wbr></wbr><span><span>Failed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1357498043%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="reject-call-failed.html"><span class="token function">rejectCallFailed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">incomingCall<span class="token operator">: </span><a href="../[android-jvm]-incoming-call-interface/index.html">IncomingCallInterface</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">error<span class="token operator">: </span><span data-unresolved-link="com.genband.mobile.api.utilities/MobileError///PointingToDeclaration/">MobileError</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Method invoked when attempt to reject an incoming call has failed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2050158338%2FFunctions%2F-509386322" anchor-label="rejectCallSuccedded" id="2050158338%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="reject-call-succedded.html"><span>reject</span><wbr></wbr><span>Call</span><wbr></wbr><span><span>Succedded</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2050158338%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="reject-call-succedded.html"><span class="token function">rejectCallSuccedded</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">incomingCall<span class="token operator">: </span><a href="../[android-jvm]-incoming-call-interface/index.html">IncomingCallInterface</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Method invoked when attempt to reject an incoming call has succeeded.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="916093453%2FFunctions%2F-509386322" anchor-label="ringingFeedbackFailed" id="916093453%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ringing-feedback-failed.html"><span>ringing</span><wbr></wbr><span>Feedback</span><wbr></wbr><span><span>Failed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="916093453%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="ringing-feedback-failed.html"><span class="token function">ringingFeedbackFailed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">incomingCall<span class="token operator">: </span><a href="../[android-jvm]-incoming-call-interface/index.html">IncomingCallInterface</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">error<span class="token operator">: </span><span data-unresolved-link="com.genband.mobile.api.utilities/MobileError///PointingToDeclaration/">MobileError</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">This method is invoked when ringing feedback has failed. This is the call back method for the ringing feedback request</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-238589489%2FFunctions%2F-509386322" anchor-label="ringingFeedbackSucceeded" id="-238589489%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ringing-feedback-succeeded.html"><span>ringing</span><wbr></wbr><span>Feedback</span><wbr></wbr><span><span>Succeeded</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-238589489%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="ringing-feedback-succeeded.html"><span class="token function">ringingFeedbackSucceeded</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">incomingCall<span class="token operator">: </span><a href="../[android-jvm]-incoming-call-interface/index.html">IncomingCallInterface</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">This method is invoked when ringing feedback has succeeded. This is the call back method for the ringing feedback request</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="295855720%2FFunctions%2F-509386322" anchor-label="sendCustomParametersFail" id="295855720%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="send-custom-parameters-fail.html"><span>send</span><wbr></wbr><span>Custom</span><wbr></wbr><span>Parameters</span><wbr></wbr><span><span>Fail</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="295855720%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="send-custom-parameters-fail.html"><span class="token function">sendCustomParametersFail</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">error<span class="token operator">: </span><span data-unresolved-link="com.genband.mobile.api.utilities/MobileError///PointingToDeclaration/">MobileError</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">This method is invoked when sending the custom SIP headers has failed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1626003651%2FFunctions%2F-509386322" anchor-label="sendCustomParametersSuccess" id="1626003651%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="send-custom-parameters-success.html"><span>send</span><wbr></wbr><span>Custom</span><wbr></wbr><span>Parameters</span><wbr></wbr><span><span>Success</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1626003651%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="send-custom-parameters-success.html"><span class="token function">sendCustomParametersSuccess</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">This method is invoked when sending the custom SIP headers has succeeded.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1748786701%2FFunctions%2F-509386322" anchor-label="transferCallFailed" id="1748786701%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="transfer-call-failed.html"><span>transfer</span><wbr></wbr><span>Call</span><wbr></wbr><span><span>Failed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1748786701%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="transfer-call-failed.html"><span class="token function">transferCallFailed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">error<span class="token operator">: </span><span data-unresolved-link="com.genband.mobile.api.utilities/MobileError///PointingToDeclaration/">MobileError</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Method invoked when attempt to transfer a call has failed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1230637636%2FFunctions%2F-509386322" anchor-label="transferCallSucceed" id="-1230637636%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="transfer-call-succeed.html"><span>transfer</span><wbr></wbr><span>Call</span><wbr></wbr><span><span>Succeed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1230637636%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="transfer-call-succeed.html"><span class="token function">transferCallSucceed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Method invoked when attempt to transfer a call has succeeded.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="32110490%2FFunctions%2F-509386322" anchor-label="unHoldCallFailed" id="32110490%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="un-hold-call-failed.html"><span>un</span><wbr></wbr><span>Hold</span><wbr></wbr><span>Call</span><wbr></wbr><span><span>Failed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="32110490%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="un-hold-call-failed.html"><span class="token function">unHoldCallFailed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">error<span class="token operator">: </span><span data-unresolved-link="com.genband.mobile.api.utilities/MobileError///PointingToDeclaration/">MobileError</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Method invoked when attempt to hold a call has failed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1947133711%2FFunctions%2F-509386322" anchor-label="unHoldCallSucceed" id="1947133711%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="un-hold-call-succeed.html"><span>un</span><wbr></wbr><span>Hold</span><wbr></wbr><span>Call</span><wbr></wbr><span><span>Succeed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1947133711%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="un-hold-call-succeed.html"><span class="token function">unHoldCallSucceed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Method invoked when attempt to hold a call has succeeded.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1133148148%2FFunctions%2F-509386322" anchor-label="unMuteCallFailed" id="1133148148%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="un-mute-call-failed.html"><span>un</span><wbr></wbr><span>Mute</span><wbr></wbr><span>Call</span><wbr></wbr><span><span>Failed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1133148148%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="un-mute-call-failed.html"><span class="token function">unMuteCallFailed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">error<span class="token operator">: </span><span data-unresolved-link="com.genband.mobile.api.utilities/MobileError///PointingToDeclaration/">MobileError</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Method invoked when attempt to unmute a call has failed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1294070901%2FFunctions%2F-509386322" anchor-label="unMuteCallSucceed" id="1294070901%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="un-mute-call-succeed.html"><span>un</span><wbr></wbr><span>Mute</span><wbr></wbr><span>Call</span><wbr></wbr><span><span>Succeed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1294070901%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="un-mute-call-succeed.html"><span class="token function">unMuteCallSucceed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Method invoked when attempt to unmute a call has succeeded.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="313205488%2FFunctions%2F-509386322" anchor-label="videoMuteFailed" id="313205488%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="video-mute-failed.html"><span>video</span><wbr></wbr><span>Mute</span><wbr></wbr><span><span>Failed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="313205488%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="video-mute-failed.html"><span class="token function">videoMuteFailed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">error<span class="token operator">: </span><span data-unresolved-link="com.genband.mobile.api.utilities/MobileError///PointingToDeclaration/">MobileError</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">The method that is called when an attempt to video mute fails in a call.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1850355705%2FFunctions%2F-509386322" anchor-label="videoMuteSucceed" id="1850355705%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="video-mute-succeed.html"><span>video</span><wbr></wbr><span>Mute</span><wbr></wbr><span><span>Succeed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1850355705%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="video-mute-succeed.html"><span class="token function">videoMuteSucceed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">The method that is called when an attempt to video mute succeeded in a call.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1734411979%2FFunctions%2F-509386322" anchor-label="videoStartFailed" id="1734411979%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="video-start-failed.html"><span>video</span><wbr></wbr><span>Start</span><wbr></wbr><span><span>Failed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1734411979%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="video-start-failed.html"><span class="token function">videoStartFailed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">error<span class="token operator">: </span><span data-unresolved-link="com.genband.mobile.api.utilities/MobileError///PointingToDeclaration/">MobileError</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Method invoked when attempt to start video on a call has failed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-979208130%2FFunctions%2F-509386322" anchor-label="videoStartSucceed" id="-979208130%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="video-start-succeed.html"><span>video</span><wbr></wbr><span>Start</span><wbr></wbr><span><span>Succeed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-979208130%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="video-start-succeed.html"><span class="token function">videoStartSucceed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Method invoked when attempt to start video on a call has succeeded.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="992364761%2FFunctions%2F-509386322" anchor-label="videoStopFailed" id="992364761%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="video-stop-failed.html"><span>video</span><wbr></wbr><span>Stop</span><wbr></wbr><span><span>Failed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="992364761%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="video-stop-failed.html"><span class="token function">videoStopFailed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">error<span class="token operator">: </span><span data-unresolved-link="com.genband.mobile.api.utilities/MobileError///PointingToDeclaration/">MobileError</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Method invoked when attempt to stop video on a call has failed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1076772720%2FFunctions%2F-509386322" anchor-label="videoStopSucceed" id="1076772720%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="video-stop-succeed.html"><span>video</span><wbr></wbr><span>Stop</span><wbr></wbr><span><span>Succeed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1076772720%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="video-stop-succeed.html"><span class="token function">videoStopSucceed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Method invoked when attempt to stop video on a call has succeeded.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-529181847%2FFunctions%2F-509386322" anchor-label="videoUnMuteFailed" id="-529181847%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="video-un-mute-failed.html"><span>video</span><wbr></wbr><span>Un</span><wbr></wbr><span>Mute</span><wbr></wbr><span><span>Failed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-529181847%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="video-un-mute-failed.html"><span class="token function">videoUnMuteFailed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">error<span class="token operator">: </span><span data-unresolved-link="com.genband.mobile.api.utilities/MobileError///PointingToDeclaration/">MobileError</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">The method that is called when an attempt to video unMute failed in a call.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-939848992%2FFunctions%2F-509386322" anchor-label="videoUnMuteSucceed" id="-939848992%2FFunctions%2F-509386322" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaKotlinDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaKotlinDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="video-un-mute-succeed.html"><span>video</span><wbr></wbr><span>Un</span><wbr></wbr><span>Mute</span><wbr></wbr><span><span>Succeed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-939848992%2FFunctions%2F-509386322"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaKotlinDoc/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="video-un-mute-succeed.html"><span class="token function">videoUnMuteSucceed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><a href="../[android-jvm]-call-interface/index.html">CallInterface</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">The method that is called when an attempt to video unMute succeeded in a call.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

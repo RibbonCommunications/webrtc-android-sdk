@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>[androidJvm]Configuration</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<link href="../../../images/logo-icon.svg">
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            MobileSDK
+                    </a>
+            </div>
+            <div class="library-version">
+6.30.0            </div>
+        </div>
+        
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="MobileSDK::com.genband.mobile.api.utilities/Configuration///PointingToDeclaration//-2013302931">
+  <div class="breadcrumbs"><a href="../../../index.html">MobileSDK</a><span class="delimiter">/</span><a href="../index.html">com.genband.mobile.api.utilities</a><span class="delimiter">/</span><span class="current">[androidJvm]Configuration</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Configuration</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">class </span><a href="index.html">Configuration</a></div><p class="paragraph">ConfigurationService class represents all information about user's settings and private information. </p><p class="paragraph"> To access any configuration items (for example username attribute): <code class="lang-kotlin">
+String username = ConfigurationService.getInstance().getUsername();
+</code><code class="lang-kotlin">
+ConfigurationService.getInstance().setUsername(&quot;username value&quot;);
+</code></p><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">2.0.0</p></span></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="991415215%2FConstructors%2F-2013302931" anchor-label="Configuration" id="991415215%2FConstructors%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-configuration.html"><span><span>Configuration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="991415215%2FConstructors%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="-configuration.html"><span class="token function">Configuration</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1115730344%2FProperties%2F-2013302931" anchor-label="auditFrequence" id="1115730344%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1115730344%2FProperties%2F-2013302931"><span>audit</span><wbr></wbr><span><span>Frequence</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1115730344%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>int <a href="index.html#1115730344%2FProperties%2F-2013302931">auditFrequence</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1169209939%2FProperties%2F-2013302931" anchor-label="bearerToken" id="-1169209939%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1169209939%2FProperties%2F-2013302931"><span>bearer</span><wbr></wbr><span><span>Token</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1169209939%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="index.html#-1169209939%2FProperties%2F-2013302931">bearerToken</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1003585460%2FProperties%2F-2013302931" anchor-label="certificateValues" id="-1003585460%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1003585460%2FProperties%2F-2013302931"><span>certificate</span><wbr></wbr><span><span>Values</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1003585460%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="../[android-jvm]-constants/-certificate-values/index.html">Constants.CertificateValues</a> <a href="index.html#-1003585460%2FProperties%2F-2013302931">certificateValues</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1816677195%2FProperties%2F-2013302931" anchor-label="codecPayloadTypeSet" id="-1816677195%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1816677195%2FProperties%2F-2013302931"><span>codec</span><wbr></wbr><span>Payload</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1816677195%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="../[android-jvm]-codec-to-replace/index.html">CodecToReplace</a><span class="token operator">&gt;</span> <a href="index.html#-1816677195%2FProperties%2F-2013302931">codecPayloadTypeSet</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-732880804%2FProperties%2F-2013302931" anchor-label="defaultCameraMode" id="-732880804%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-732880804%2FProperties%2F-2013302931"><span>default</span><wbr></wbr><span>Camera</span><wbr></wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-732880804%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>int <a href="index.html#-732880804%2FProperties%2F-2013302931">defaultCameraMode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1790536794%2FProperties%2F-2013302931" anchor-label="dtmfToneDuration" id="-1790536794%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1790536794%2FProperties%2F-2013302931"><span>dtmf</span><wbr></wbr><span>Tone</span><wbr></wbr><span><span>Duration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1790536794%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>int <a href="index.html#-1790536794%2FProperties%2F-2013302931">dtmfToneDuration</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1433533728%2FProperties%2F-2013302931" anchor-label="forceDisableMediaOnHold" id="-1433533728%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1433533728%2FProperties%2F-2013302931"><span>force</span><wbr></wbr><span>Disable</span><wbr></wbr><span>Media</span><wbr></wbr><span>On</span><wbr></wbr><span><span>Hold</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1433533728%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>boolean <a href="index.html#-1433533728%2FProperties%2F-2013302931">forceDisableMediaOnHold</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1750726908%2FProperties%2F-2013302931" anchor-label="fps" id="1750726908%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1750726908%2FProperties%2F-2013302931"><span><span>fps</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1750726908%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>int <a href="index.html#1750726908%2FProperties%2F-2013302931">fps</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="714072499%2FProperties%2F-2013302931" anchor-label="hmacToken" id="714072499%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#714072499%2FProperties%2F-2013302931"><span>hmac</span><wbr></wbr><span><span>Token</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="714072499%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="index.html#714072499%2FProperties%2F-2013302931">hmacToken</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="953056485%2FProperties%2F-2013302931" anchor-label="iceOption" id="953056485%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#953056485%2FProperties%2F-2013302931"><span>ice</span><wbr></wbr><span><span>Option</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="953056485%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="../[android-jvm]-i-c-e-options/index.html">ICEOptions</a> <a href="index.html#953056485%2FProperties%2F-2013302931">iceOption</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1368800192%2FProperties%2F-2013302931" anchor-label="instance" id="1368800192%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1368800192%2FProperties%2F-2013302931"><span><span>instance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1368800192%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">static </span><a href="index.html">Configuration</a> <a href="index.html#1368800192%2FProperties%2F-2013302931">instance</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-389763051%2FProperties%2F-2013302931" anchor-label="logLevel" id="-389763051%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-389763051%2FProperties%2F-2013302931"><span>log</span><wbr></wbr><span><span>Level</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-389763051%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="../[android-jvm]-constants/-log-level/index.html">Constants.LogLevel</a> <a href="index.html#-389763051%2FProperties%2F-2013302931">logLevel</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1394390414%2FProperties%2F-2013302931" anchor-label="notificationChannelID" id="-1394390414%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1394390414%2FProperties%2F-2013302931"><span>notification</span><wbr></wbr><span>Channel</span><wbr></wbr><span><span>ID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1394390414%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="index.html#-1394390414%2FProperties%2F-2013302931">notificationChannelID</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1744138642%2FProperties%2F-2013302931" anchor-label="orientationMode" id="1744138642%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1744138642%2FProperties%2F-2013302931"><span>orientation</span><wbr></wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1744138642%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="../[android-jvm]-orientation-mode/index.html">OrientationMode</a> <a href="index.html#1744138642%2FProperties%2F-2013302931">orientationMode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1359886214%2FProperties%2F-2013302931" anchor-label="password" id="-1359886214%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1359886214%2FProperties%2F-2013302931"><span><span>password</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1359886214%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="index.html#-1359886214%2FProperties%2F-2013302931">password</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-720677800%2FProperties%2F-2013302931" anchor-label="preferredCodecSet" id="-720677800%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-720677800%2FProperties%2F-2013302931"><span>preferred</span><wbr></wbr><span>Codec</span><wbr></wbr><span><span>Set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-720677800%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="../[android-jvm]-codec-set/index.html">CodecSet</a> <a href="index.html#-720677800%2FProperties%2F-2013302931">preferredCodecSet</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2133568813%2FProperties%2F-2013302931" anchor-label="pushServerURL" id="-2133568813%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-2133568813%2FProperties%2F-2013302931"><span>push</span><wbr></wbr><span>Server</span><wbr></wbr><span><span>URL</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2133568813%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/net/URL.html">URL</a> <a href="index.html#-2133568813%2FProperties%2F-2013302931">pushServerURL</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2050284361%2FProperties%2F-2013302931" anchor-label="restServerIp" id="-2050284361%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-2050284361%2FProperties%2F-2013302931"><span>rest</span><wbr></wbr><span>Server</span><wbr></wbr><span><span>Ip</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2050284361%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="index.html#-2050284361%2FProperties%2F-2013302931">restServerIp</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-471849379%2FProperties%2F-2013302931" anchor-label="restServerPort" id="-471849379%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-471849379%2FProperties%2F-2013302931"><span>rest</span><wbr></wbr><span>Server</span><wbr></wbr><span><span>Port</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-471849379%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>int <a href="index.html#-471849379%2FProperties%2F-2013302931">restServerPort</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1430245223%2FProperties%2F-2013302931" anchor-label="ringingFeedbackOption" id="-1430245223%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1430245223%2FProperties%2F-2013302931"><span>ringing</span><wbr></wbr><span>Feedback</span><wbr></wbr><span><span>Option</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1430245223%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">static </span><a href="../[android-jvm]-ringing-feedback-options/index.html">RingingFeedbackOptions</a> <a href="index.html#-1430245223%2FProperties%2F-2013302931">ringingFeedbackOption</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1089410033%2FProperties%2F-2013302931" anchor-label="serverCertificate" id="1089410033%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1089410033%2FProperties%2F-2013302931"><span>server</span><wbr></wbr><span><span>Certificate</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1089410033%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html">Certificate</a> <a href="index.html#1089410033%2FProperties%2F-2013302931">serverCertificate</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1204652020%2FProperties%2F-2013302931" anchor-label="slowStartCallPolicy" id="1204652020%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1204652020%2FProperties%2F-2013302931"><span>slow</span><wbr></wbr><span>Start</span><wbr></wbr><span>Call</span><wbr></wbr><span><span>Policy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1204652020%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="../[android-jvm]-slow-start-call-policy/index.html">SlowStartCallPolicy</a> <a href="index.html#1204652020%2FProperties%2F-2013302931">slowStartCallPolicy</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1496675139%2FProperties%2F-2013302931" anchor-label="subscriptionID" id="-1496675139%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1496675139%2FProperties%2F-2013302931"><span>subscription</span><wbr></wbr><span><span>ID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1496675139%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="index.html#-1496675139%2FProperties%2F-2013302931">subscriptionID</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1623903905%2FProperties%2F-2013302931" anchor-label="tokenRealm" id="-1623903905%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1623903905%2FProperties%2F-2013302931"><span>token</span><wbr></wbr><span><span>Realm</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1623903905%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="index.html#-1623903905%2FProperties%2F-2013302931">tokenRealm</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="952335390%2FProperties%2F-2013302931" anchor-label="videoResolution" id="952335390%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#952335390%2FProperties%2F-2013302931"><span>video</span><wbr></wbr><span><span>Resolution</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="952335390%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/hardware/Camera.Size.html">Camera.Size</a> <a href="index.html#952335390%2FProperties%2F-2013302931">videoResolution</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="224938189%2FProperties%2F-2013302931" anchor-label="webSocketConnectionRetryLimit" id="224938189%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#224938189%2FProperties%2F-2013302931"><span>web</span><wbr></wbr><span>Socket</span><wbr></wbr><span>Connection</span><wbr></wbr><span>Retry</span><wbr></wbr><span><span>Limit</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="224938189%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>int <a href="index.html#224938189%2FProperties%2F-2013302931">webSocketConnectionRetryLimit</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="351670457%2FProperties%2F-2013302931" anchor-label="webSocketConnectionTimeout" id="351670457%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#351670457%2FProperties%2F-2013302931"><span>web</span><wbr></wbr><span>Socket</span><wbr></wbr><span>Connection</span><wbr></wbr><span><span>Timeout</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="351670457%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>int <a href="index.html#351670457%2FProperties%2F-2013302931">webSocketConnectionTimeout</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="710935572%2FProperties%2F-2013302931" anchor-label="webSocketServerIp" id="710935572%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#710935572%2FProperties%2F-2013302931"><span>web</span><wbr></wbr><span>Socket</span><wbr></wbr><span>Server</span><wbr></wbr><span><span>Ip</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="710935572%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="index.html#710935572%2FProperties%2F-2013302931">webSocketServerIp</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1229282694%2FProperties%2F-2013302931" anchor-label="webSocketServerPort" id="-1229282694%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1229282694%2FProperties%2F-2013302931"><span>web</span><wbr></wbr><span>Socket</span><wbr></wbr><span>Server</span><wbr></wbr><span><span>Port</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1229282694%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>int <a href="index.html#-1229282694%2FProperties%2F-2013302931">webSocketServerPort</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="647829745%2FProperties%2F-2013302931" anchor-label="webSocketWithTokenAuthentication" id="647829745%2FProperties%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#647829745%2FProperties%2F-2013302931"><span>web</span><wbr></wbr><span>Socket</span><wbr></wbr><span>With</span><wbr></wbr><span>Token</span><wbr></wbr><span><span>Authentication</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="647829745%2FProperties%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>boolean <a href="index.html#647829745%2FProperties%2F-2013302931">webSocketWithTokenAuthentication</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="300040529%2FFunctions%2F-2013302931" anchor-label="getAudioOpusCodecConfigurations" id="300040529%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-audio-opus-codec-configurations.html"><span>get</span><wbr></wbr><span>Audio</span><wbr></wbr><span>Opus</span><wbr></wbr><span>Codec</span><wbr></wbr><span><span>Configurations</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="300040529%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="../[android-jvm]-audio-codec-configuration/index.html">AudioCodecConfiguration</a> <a href="get-audio-opus-codec-configurations.html"><span class="token function">getAudioOpusCodecConfigurations</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets the Opus audio codec configurations.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1381539970%2FFunctions%2F-2013302931" anchor-label="getAuditFrequence" id="1381539970%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-audit-frequence.html"><span>get</span><wbr></wbr><span>Audit</span><wbr></wbr><span><span>Frequence</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1381539970%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>int <a href="get-audit-frequence.html"><span class="token function">getAuditFrequence</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">This method returns the set time interval in seconds.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="695218311%2FFunctions%2F-2013302931" anchor-label="getAuthorizationName" id="695218311%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-authorization-name.html"><span>get</span><wbr></wbr><span>Authorization</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="695218311%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="get-authorization-name.html"><span class="token function">getAuthorizationName</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets Authorization Name of user.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="544691475%2FFunctions%2F-2013302931" anchor-label="getBearerToken" id="544691475%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-bearer-token.html"><span>get</span><wbr></wbr><span>Bearer</span><wbr></wbr><span><span>Token</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="544691475%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="get-bearer-token.html"><span class="token function">getBearerToken</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets bearer token of the user</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2106256178%2FFunctions%2F-2013302931" anchor-label="getCertificateValues" id="2106256178%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-certificate-values.html"><span>get</span><wbr></wbr><span>Certificate</span><wbr></wbr><span><span>Values</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2106256178%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="../[android-jvm]-constants/-certificate-values/index.html">Constants.CertificateValues</a> <a href="get-certificate-values.html"><span class="token function">getCertificateValues</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1738866203%2FFunctions%2F-2013302931" anchor-label="getCodecPayloadTypeSet" id="1738866203%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-codec-payload-type-set.html"><span>get</span><wbr></wbr><span>Codec</span><wbr></wbr><span>Payload</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1738866203%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="../[android-jvm]-codec-to-replace/index.html">CodecToReplace</a><span class="token operator">&gt;</span> <a href="get-codec-payload-type-set.html"><span class="token function">getCodecPayloadTypeSet</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Returns codecPayloadTypeSet.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1918006462%2FFunctions%2F-2013302931" anchor-label="getDefaultCameraMode" id="-1918006462%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-default-camera-mode.html"><span>get</span><wbr></wbr><span>Default</span><wbr></wbr><span>Camera</span><wbr></wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1918006462%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>int <a href="get-default-camera-mode.html"><span class="token function">getDefaultCameraMode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Returns the default camera mode.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1232243946%2FFunctions%2F-2013302931" anchor-label="getDefaultICEPassword" id="1232243946%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-default-i-c-e-password.html"><span>get</span><wbr></wbr><span>Default</span><wbr></wbr><span><span>ICEPassword</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1232243946%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="get-default-i-c-e-password.html"><span class="token function">getDefaultICEPassword</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets the default ice server password, this property is read only and set by registration service</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1890363151%2FFunctions%2F-2013302931" anchor-label="getDefaultICEUsername" id="1890363151%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-default-i-c-e-username.html"><span>get</span><wbr></wbr><span>Default</span><wbr></wbr><span><span>ICEUsername</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1890363151%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="get-default-i-c-e-username.html"><span class="token function">getDefaultICEUsername</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets the default ice server username, this property is read only and set by registration service</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="249443328%2FFunctions%2F-2013302931" anchor-label="getDtmfToneDuration" id="249443328%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-dtmf-tone-duration.html"><span>get</span><wbr></wbr><span>Dtmf</span><wbr></wbr><span>Tone</span><wbr></wbr><span><span>Duration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="249443328%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>int <a href="get-dtmf-tone-duration.html"><span class="token function">getDtmfToneDuration</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Returns duration value of DTMF tones im ms</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-900978362%2FFunctions%2F-2013302931" anchor-label="getForceDisableMediaOnHold" id="-900978362%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-force-disable-media-on-hold.html"><span>get</span><wbr></wbr><span>Force</span><wbr></wbr><span>Disable</span><wbr></wbr><span>Media</span><wbr></wbr><span>On</span><wbr></wbr><span><span>Hold</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-900978362%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>boolean <a href="get-force-disable-media-on-hold.html"><span class="token function">getForceDisableMediaOnHold</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-756887966%2FFunctions%2F-2013302931" anchor-label="getFps" id="-756887966%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-fps.html"><span>get</span><wbr></wbr><span><span>Fps</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-756887966%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>int <a href="get-fps.html"><span class="token function">getFps</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets the parameter for frame per second.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="840995481%2FFunctions%2F-2013302931" anchor-label="getHmacToken" id="840995481%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-hmac-token.html"><span>get</span><wbr></wbr><span>Hmac</span><wbr></wbr><span><span>Token</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="840995481%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="get-hmac-token.html"><span class="token function">getHmacToken</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets hmac token of the user</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-186827913%2FFunctions%2F-2013302931" anchor-label="getICECollectionTimeout" id="-186827913%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-i-c-e-collection-timeout.html"><span>get</span><wbr></wbr><span>ICECollection</span><wbr></wbr><span><span>Timeout</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-186827913%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>int <a href="get-i-c-e-collection-timeout.html"><span class="token function">getICECollectionTimeout</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Returns timeout value of ICE Collection</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1079979467%2FFunctions%2F-2013302931" anchor-label="getIceOption" id="1079979467%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-ice-option.html"><span>get</span><wbr></wbr><span>Ice</span><wbr></wbr><span><span>Option</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1079979467%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="../[android-jvm]-i-c-e-options/index.html">ICEOptions</a> <a href="get-ice-option.html"><span class="token function">getIceOption</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets ice option</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1719578710%2FFunctions%2F-2013302931" anchor-label="getICEServers" id="-1719578710%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-i-c-e-servers.html"><span>get</span><wbr></wbr><span><span>ICEServers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1719578710%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="../[android-jvm]-i-c-e-servers/index.html">ICEServers</a> <a href="get-i-c-e-servers.html"><span class="token function">getICEServers</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets the user defined ICE servers array <code class="lang-kotlin">(including stun &amp; turn) </code></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1649989146%2FFunctions%2F-2013302931" anchor-label="getInstance" id="1649989146%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-instance.html"><span>get</span><wbr></wbr><span><span>Instance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1649989146%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">static </span><a href="index.html">Configuration</a> <a href="get-instance.html"><span class="token function">getInstance</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">This method returns (creates if necessary) singleton instance of Configuration class</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1161110015%2FFunctions%2F-2013302931" anchor-label="getLogger" id="1161110015%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-logger.html"><span>get</span><wbr></wbr><span><span>Logger</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1161110015%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="../[android-jvm]-logging-interface/index.html">LoggingInterface</a> <a href="get-logger.html"><span class="token function">getLogger</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets LoggingInterface reference used by LogManager.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-108574097%2FFunctions%2F-2013302931" anchor-label="getLogLevel" id="-108574097%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-log-level.html"><span>get</span><wbr></wbr><span>Log</span><wbr></wbr><span><span>Level</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-108574097%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="../[android-jvm]-constants/-log-level/index.html">Constants.LogLevel</a> <a href="get-log-level.html"><span class="token function">getLogLevel</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Returns logLevel value of Mobile SDK</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="983814744%2FFunctions%2F-2013302931" anchor-label="getNotificationChannelID" id="983814744%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-notification-channel-i-d.html"><span>get</span><wbr></wbr><span>Notification</span><wbr></wbr><span>Channel</span><wbr></wbr><span><span>ID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="983814744%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="get-notification-channel-i-d.html"><span class="token function">getNotificationChannelID</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1394302456%2FFunctions%2F-2013302931" anchor-label="getOrientationMode" id="1394302456%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-orientation-mode.html"><span>get</span><wbr></wbr><span>Orientation</span><wbr></wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1394302456%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="../[android-jvm]-orientation-mode/index.html">OrientationMode</a> <a href="get-orientation-mode.html"><span class="token function">getOrientationMode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets Orientation Mode</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1078697260%2FFunctions%2F-2013302931" anchor-label="getPassword" id="-1078697260%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-password.html"><span>get</span><wbr></wbr><span><span>Password</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1078697260%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="get-password.html"><span class="token function">getPassword</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets password of user</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1905803458%2FFunctions%2F-2013302931" anchor-label="getPreferredCodecSet" id="-1905803458%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-preferred-codec-set.html"><span>get</span><wbr></wbr><span>Preferred</span><wbr></wbr><span>Codec</span><wbr></wbr><span><span>Set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1905803458%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="../[android-jvm]-codec-set/index.html">CodecSet</a> <a href="get-preferred-codec-set.html"><span class="token function">getPreferredCodecSet</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Returns preferred Codec Set</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-46784327%2FFunctions%2F-2013302931" anchor-label="getPushServerURL" id="-46784327%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-push-server-u-r-l.html"><span>get</span><wbr></wbr><span>Push</span><wbr></wbr><span>Server</span><wbr></wbr><span><span>URL</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-46784327%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/net/URL.html">URL</a> <a href="get-push-server-u-r-l.html"><span class="token function">getPushServerURL</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Returns the push server URL</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1133959927%2FFunctions%2F-2013302931" anchor-label="getReceiveBandwidthSetting" id="-1133959927%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-receive-bandwidth-setting.html"><span>get</span><wbr></wbr><span>Receive</span><wbr></wbr><span>Bandwidth</span><wbr></wbr><span><span>Setting</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1133959927%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="../[android-jvm]-call-receive-bandwidth-limit/index.html">CallReceiveBandwidthLimit</a> <a href="get-receive-bandwidth-setting.html"><span class="token function">getReceiveBandwidthSetting</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-458948079%2FFunctions%2F-2013302931" anchor-label="getRestServerIp" id="-458948079%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-rest-server-ip.html"><span>get</span><wbr></wbr><span>Rest</span><wbr></wbr><span>Server</span><wbr></wbr><span><span>Ip</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-458948079%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="get-rest-server-ip.html"><span class="token function">getRestServerIp</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets server IP information used in REST requests.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-206039753%2FFunctions%2F-2013302931" anchor-label="getRestServerPort" id="-206039753%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-rest-server-port.html"><span>get</span><wbr></wbr><span>Rest</span><wbr></wbr><span>Server</span><wbr></wbr><span><span>Port</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-206039753%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>int <a href="get-rest-server-port.html"><span class="token function">getRestServerPort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets server port information used in REST requests.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="947959935%2FFunctions%2F-2013302931" anchor-label="getRingingFeedbackOption" id="947959935%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-ringing-feedback-option.html"><span>get</span><wbr></wbr><span>Ringing</span><wbr></wbr><span>Feedback</span><wbr></wbr><span><span>Option</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="947959935%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="../[android-jvm]-ringing-feedback-options/index.html">RingingFeedbackOptions</a> <a href="get-ringing-feedback-option.html"><span class="token function">getRingingFeedbackOption</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets ringingFeedbackOption Default value is AUTO,</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-95715625%2FFunctions%2F-2013302931" anchor-label="getServerCertificate" id="-95715625%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-server-certificate.html"><span>get</span><wbr></wbr><span>Server</span><wbr></wbr><span><span>Certificate</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-95715625%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html">Certificate</a> <a href="get-server-certificate.html"><span class="token function">getServerCertificate</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets the serverCertificate for secure HTTP.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="465228122%2FFunctions%2F-2013302931" anchor-label="getSlowStartCallPolicy" id="465228122%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-slow-start-call-policy.html"><span>get</span><wbr></wbr><span>Slow</span><wbr></wbr><span>Start</span><wbr></wbr><span>Call</span><wbr></wbr><span><span>Policy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="465228122%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="../[android-jvm]-slow-start-call-policy/index.html">SlowStartCallPolicy</a> <a href="get-slow-start-call-policy.html"><span class="token function">getSlowStartCallPolicy</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-883090394%2FFunctions%2F-2013302931" anchor-label="getSubscriptionExpireTime" id="-883090394%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-subscription-expire-time.html"><span>get</span><wbr></wbr><span>Subscription</span><wbr></wbr><span>Expire</span><wbr></wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-883090394%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>int <a href="get-subscription-expire-time.html"><span class="token function">getSubscriptionExpireTime</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets expire time of registration operation</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1230865513%2FFunctions%2F-2013302931" anchor-label="getSubscriptionID" id="-1230865513%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-subscription-i-d.html"><span>get</span><wbr></wbr><span>Subscription</span><wbr></wbr><span><span>ID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1230865513%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="get-subscription-i-d.html"><span class="token function">getSubscriptionID</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1984258759%2FFunctions%2F-2013302931" anchor-label="getTokenRealm" id="-1984258759%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-token-realm.html"><span>get</span><wbr></wbr><span>Token</span><wbr></wbr><span><span>Realm</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1984258759%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="get-token-realm.html"><span class="token function">getTokenRealm</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Token used in anonymous calls.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-420578055%2FFunctions%2F-2013302931" anchor-label="getUsername" id="-420578055%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-username.html"><span>get</span><wbr></wbr><span><span>Username</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-420578055%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="get-username.html"><span class="token function">getUsername</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets user name of user</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="602499204%2FFunctions%2F-2013302931" anchor-label="getVideoResolution" id="602499204%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-video-resolution.html"><span>get</span><wbr></wbr><span>Video</span><wbr></wbr><span><span>Resolution</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="602499204%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/hardware/Camera.Size.html">Camera.Size</a> <a href="get-video-resolution.html"><span class="token function">getVideoResolution</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets the defined/used video Resolution.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="657296051%2FFunctions%2F-2013302931" anchor-label="getWebSocketConnectionRetryLimit" id="657296051%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-web-socket-connection-retry-limit.html"><span>get</span><wbr></wbr><span>Web</span><wbr></wbr><span>Socket</span><wbr></wbr><span>Connection</span><wbr></wbr><span>Retry</span><wbr></wbr><span><span>Limit</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="657296051%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>int <a href="get-web-socket-connection-retry-limit.html"><span class="token function">getWebSocketConnectionRetryLimit</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets the maximum number of times to retry the WebSocket connection in case the WebSocket connection fails.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="99387539%2FFunctions%2F-2013302931" anchor-label="getWebSocketConnectionTimeout" id="99387539%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-web-socket-connection-timeout.html"><span>get</span><wbr></wbr><span>Web</span><wbr></wbr><span>Socket</span><wbr></wbr><span>Connection</span><wbr></wbr><span><span>Timeout</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="99387539%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>int <a href="get-web-socket-connection-timeout.html"><span class="token function">getWebSocketConnectionTimeout</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets the connection timeout value of WebSocket.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-474190086%2FFunctions%2F-2013302931" anchor-label="getWebSocketServerIp" id="-474190086%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-web-socket-server-ip.html"><span>get</span><wbr></wbr><span>Web</span><wbr></wbr><span>Socket</span><wbr></wbr><span>Server</span><wbr></wbr><span><span>Ip</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-474190086%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="get-web-socket-server-ip.html"><span class="token function">getWebSocketServerIp</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets IP information used in web socket connection creation.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1968706592%2FFunctions%2F-2013302931" anchor-label="getWebSocketServerPort" id="-1968706592%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-web-socket-server-port.html"><span>get</span><wbr></wbr><span>Web</span><wbr></wbr><span>Socket</span><wbr></wbr><span>Server</span><wbr></wbr><span><span>Port</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1968706592%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>int <a href="get-web-socket-server-port.html"><span class="token function">getWebSocketServerPort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets port information used in web socket connection creation.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="413975883%2FFunctions%2F-2013302931" anchor-label="getWebSocketWithTokenAuthentication" id="413975883%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-web-socket-with-token-authentication.html"><span>get</span><wbr></wbr><span>Web</span><wbr></wbr><span>Socket</span><wbr></wbr><span>With</span><wbr></wbr><span>Token</span><wbr></wbr><span><span>Authentication</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="413975883%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>boolean <a href="get-web-socket-with-token-authentication.html"><span class="token function">getWebSocketWithTokenAuthentication</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets webSocketConnection mode If true, it uses token for webSocketConnection.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="962830870%2FFunctions%2F-2013302931" anchor-label="getxSessionId" id="962830870%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="getx-session-id.html"><span>getx</span><wbr></wbr><span>Session</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="962830870%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="getx-session-id.html"><span class="token function">getxSessionId</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Gets session id of user</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1527739253%2FFunctions%2F-2013302931" anchor-label="isHttpPersistentConnectionEnabled" id="-1527739253%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-http-persistent-connection-enabled.html"><span>is</span><wbr></wbr><span>Http</span><wbr></wbr><span>Persistent</span><wbr></wbr><span>Connection</span><wbr></wbr><span><span>Enabled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1527739253%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>boolean <a href="is-http-persistent-connection-enabled.html"><span class="token function">isHttpPersistentConnectionEnabled</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Indicates whether httpPersistentConnection is enabled or not</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="283448797%2FFunctions%2F-2013302931" anchor-label="setAudioOpusCodecConfigurations" id="283448797%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-audio-opus-codec-configurations.html"><span>set</span><wbr></wbr><span>Audio</span><wbr></wbr><span>Opus</span><wbr></wbr><span>Codec</span><wbr></wbr><span><span>Configurations</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="283448797%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-audio-opus-codec-configurations.html"><span class="token function">setAudioOpusCodecConfigurations</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="../[android-jvm]-audio-codec-configuration/index.html">AudioCodecConfiguration</a> audioCodecConfiguration</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets the Audio Codec configurations.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1723971389%2FFunctions%2F-2013302931" anchor-label="setAuditFrequence" id="1723971389%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-audit-frequence.html"><span>set</span><wbr></wbr><span>Audit</span><wbr></wbr><span><span>Frequence</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1723971389%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-audit-frequence.html"><span class="token function">setAuditFrequence</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span>int timeInSeconds</span></span><span class="token punctuation">)</span></div><div class="brief ">This method is used for setting time interval for sending control frames.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2006086286%2FFunctions%2F-2013302931" anchor-label="setAuthorizationName" id="2006086286%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-authorization-name.html"><span>set</span><wbr></wbr><span>Authorization</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2006086286%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-authorization-name.html"><span class="token function">setAuthorizationName</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> authName</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets authName name of user.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1289258982%2FFunctions%2F-2013302931" anchor-label="setBearerToken" id="-1289258982%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-bearer-token.html"><span>set</span><wbr></wbr><span>Bearer</span><wbr></wbr><span><span>Token</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1289258982%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-bearer-token.html"><span class="token function">setBearerToken</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> bearerToken</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets bearer token of the user</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-977428646%2FFunctions%2F-2013302931" anchor-label="setCertificateDetails" id="-977428646%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-certificate-details.html"><span>set</span><wbr></wbr><span>Certificate</span><wbr></wbr><span><span>Details</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-977428646%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-certificate-details.html"><span class="token function">setCertificateDetails</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> storeType<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> storePassword<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/io/File.html">File</a> keyStoreFile<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> keyPassword</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets protocol information used in web socket connection creation.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-460424720%2FFunctions%2F-2013302931" anchor-label="setCodecPayloadTypeSet" id="-460424720%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-codec-payload-type-set.html"><span>set</span><wbr></wbr><span>Codec</span><wbr></wbr><span>Payload</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-460424720%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-codec-payload-type-set.html"><span class="token function">setCodecPayloadTypeSet</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="../[android-jvm]-codec-to-replace/index.html">CodecToReplace</a><span class="token operator">&gt;</span> codecSet</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets Codec Payload TypeSet for modified sdp creation</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1536838885%2FFunctions%2F-2013302931" anchor-label="setDefaultCameraMode" id="1536838885%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-default-camera-mode.html"><span>set</span><wbr></wbr><span>Default</span><wbr></wbr><span>Camera</span><wbr></wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1536838885%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-default-camera-mode.html"><span class="token function">setDefaultCameraMode</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span>int cameraMode</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets default camera mode for every call.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="626604031%2FFunctions%2F-2013302931" anchor-label="setDtmfToneDuration" id="626604031%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-dtmf-tone-duration.html"><span>set</span><wbr></wbr><span>Dtmf</span><wbr></wbr><span>Tone</span><wbr></wbr><span><span>Duration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="626604031%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-dtmf-tone-duration.html"><span class="token function">setDtmfToneDuration</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span>int dtmfToneDuration</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets duration value of DTMF tones im ms</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2142596488%2FFunctions%2F-2013302931" anchor-label="setForceDisableMediaOnHold" id="2142596488%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-force-disable-media-on-hold.html"><span>set</span><wbr></wbr><span>Force</span><wbr></wbr><span>Disable</span><wbr></wbr><span>Media</span><wbr></wbr><span>On</span><wbr></wbr><span><span>Hold</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2142596488%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-force-disable-media-on-hold.html"><span class="token function">setForceDisableMediaOnHold</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span>boolean value</span></span><span class="token punctuation">)</span></div><div class="brief ">Forces to disable media transfer when media on hold is active.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1422282949%2FFunctions%2F-2013302931" anchor-label="setFps" id="1422282949%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-fps.html"><span>set</span><wbr></wbr><span><span>Fps</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1422282949%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-fps.html"><span class="token function">setFps</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span>int fps</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets the parameter for frame per second.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-626984832%2FFunctions%2F-2013302931" anchor-label="setHMACToken" id="-626984832%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-h-m-a-c-token.html"><span>set</span><wbr></wbr><span><span>HMACToken</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-626984832%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-h-m-a-c-token.html"><span class="token function">setHMACToken</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> authToken</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets hmac token of the user</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2000701624%2FFunctions%2F-2013302931" anchor-label="setHttpPersistentConnection" id="-2000701624%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-http-persistent-connection.html"><span>set</span><wbr></wbr><span>Http</span><wbr></wbr><span>Persistent</span><wbr></wbr><span><span>Connection</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2000701624%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-http-persistent-connection.html"><span class="token function">setHttpPersistentConnection</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a> value</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets the indicator which shows whether httpPersistentConnection is enabled or not</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1221950680%2FFunctions%2F-2013302931" anchor-label="setICECollectionTimeout" id="-1221950680%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-i-c-e-collection-timeout.html"><span>set</span><wbr></wbr><span>ICECollection</span><wbr></wbr><span><span>Timeout</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1221950680%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-i-c-e-collection-timeout.html"><span class="token function">setICECollectionTimeout</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span>int ICECollectionTimeout</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets timeout value of ICE Collection</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-794093302%2FFunctions%2F-2013302931" anchor-label="setIceOption" id="-794093302%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-ice-option.html"><span>set</span><wbr></wbr><span>Ice</span><wbr></wbr><span><span>Option</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-794093302%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-ice-option.html"><span class="token function">setIceOption</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="../[android-jvm]-i-c-e-options/index.html">ICEOptions</a> iceOption</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets ice option.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2082013233%2FFunctions%2F-2013302931" anchor-label="setICEServers" id="2082013233%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-i-c-e-servers.html"><span>set</span><wbr></wbr><span><span>ICEServers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2082013233%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-i-c-e-servers.html"><span class="token function">setICEServers</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="../[android-jvm]-i-c-e-servers/index.html">ICEServers</a> ICEServers</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets the user's ICE servers that will be used for creating Peer Connection</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1442311431%2FFunctions%2F-2013302931" anchor-label="setLogger" id="1442311431%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-logger.html"><span>set</span><wbr></wbr><span><span>Logger</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1442311431%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-logger.html"><span class="token function">setLogger</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="../[android-jvm]-logging-interface/index.html">LoggingInterface</a> logger</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets LoggingInterface reference used by LogManager.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1356583442%2FFunctions%2F-2013302931" anchor-label="setLogLevel" id="1356583442%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-log-level.html"><span>set</span><wbr></wbr><span>Log</span><wbr></wbr><span><span>Level</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1356583442%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-log-level.html"><span class="token function">setLogLevel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="../[android-jvm]-constants/-log-level/index.html">Constants.LogLevel</a> logLevel</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets log level of Mobile SDK If not set, TRACE level is used as default.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1502112863%2FFunctions%2F-2013302931" anchor-label="setNotificationChannelID" id="1502112863%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-notification-channel-i-d.html"><span>set</span><wbr></wbr><span>Notification</span><wbr></wbr><span>Channel</span><wbr></wbr><span><span>ID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1502112863%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-notification-channel-i-d.html"><span class="token function">setNotificationChannelID</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> notificationChannelID</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1360780321%2FFunctions%2F-2013302931" anchor-label="setOrientationMode" id="-1360780321%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-orientation-mode.html"><span>set</span><wbr></wbr><span>Orientation</span><wbr></wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1360780321%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-orientation-mode.html"><span class="token function">setOrientationMode</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="../[android-jvm]-orientation-mode/index.html">OrientationMode</a> mode</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets orientation mode</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-554819261%2FFunctions%2F-2013302931" anchor-label="setPassword" id="-554819261%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-password.html"><span>set</span><wbr></wbr><span><span>Password</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-554819261%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-password.html"><span class="token function">setPassword</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> password</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets password of user</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="950283518%2FFunctions%2F-2013302931" anchor-label="setPreferredCodecSet" id="950283518%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-preferred-codec-set.html"><span>set</span><wbr></wbr><span>Preferred</span><wbr></wbr><span>Codec</span><wbr></wbr><span><span>Set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="950283518%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-preferred-codec-set.html"><span class="token function">setPreferredCodecSet</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="../[android-jvm]-codec-set/index.html">CodecSet</a> codecSet</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets preferred CodecSet for modified sdp creation</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1776496851%2FFunctions%2F-2013302931" anchor-label="setPushServerURL" id="1776496851%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-push-server-u-r-l.html"><span>set</span><wbr></wbr><span>Push</span><wbr></wbr><span>Server</span><wbr></wbr><span><span>URL</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1776496851%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-push-server-u-r-l.html"><span class="token function">setPushServerURL</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/net/URL.html">URL</a> pushServerURL</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets push server URL</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2064768707%2FFunctions%2F-2013302931" anchor-label="setReceiveVideoBandwidth" id="-2064768707%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-receive-video-bandwidth.html"><span>set</span><wbr></wbr><span>Receive</span><wbr></wbr><span>Video</span><wbr></wbr><span><span>Bandwidth</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2064768707%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-receive-video-bandwidth.html"><span class="token function">setReceiveVideoBandwidth</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="../[android-jvm]-call-receive-bandwidth-limit/index.html">CallReceiveBandwidthLimit</a> callReceiveBandwidthLimit</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets the bandwidth limit for all outgoing calls to be created and incoming calls to be received.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-979415936%2FFunctions%2F-2013302931" anchor-label="setRestServerIp" id="-979415936%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-rest-server-ip.html"><span>set</span><wbr></wbr><span>Rest</span><wbr></wbr><span>Server</span><wbr></wbr><span><span>Ip</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-979415936%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-rest-server-ip.html"><span class="token function">setRestServerIp</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> restServerIp</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets server IP information used in REST requests.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1978660248%2FFunctions%2F-2013302931" anchor-label="setRestServerPort" id="-1978660248%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-rest-server-port.html"><span>set</span><wbr></wbr><span>Rest</span><wbr></wbr><span>Server</span><wbr></wbr><span><span>Port</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1978660248%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-rest-server-port.html"><span class="token function">setRestServerPort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span>int restServerPort</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets server port information used in REST requests.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2030551458%2FFunctions%2F-2013302931" anchor-label="setRingingFeedbackOption" id="2030551458%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-ringing-feedback-option.html"><span>set</span><wbr></wbr><span>Ringing</span><wbr></wbr><span>Feedback</span><wbr></wbr><span><span>Option</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2030551458%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-ringing-feedback-option.html"><span class="token function">setRingingFeedbackOption</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="../[android-jvm]-ringing-feedback-options/index.html">RingingFeedbackOptions</a> ringingFeedbackOption</span></span><span class="token punctuation">)</span></div><div class="brief ">APP --> The application side should manage the ringing feedback operations.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="118795188%2FFunctions%2F-2013302931" anchor-label="setServerCertificate" id="118795188%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-server-certificate.html"><span>set</span><wbr></wbr><span>Server</span><wbr></wbr><span><span>Certificate</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="118795188%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-server-certificate.html"><span class="token function">setServerCertificate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html">Certificate</a> serverCertificate</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets the server certificate for secure HTTPS.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="72279715%2FFunctions%2F-2013302931" anchor-label="setSlowStartCallPolicy" id="72279715%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-slow-start-call-policy.html"><span>set</span><wbr></wbr><span>Slow</span><wbr></wbr><span>Start</span><wbr></wbr><span>Call</span><wbr></wbr><span><span>Policy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="72279715%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-slow-start-call-policy.html"><span class="token function">setSlowStartCallPolicy</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="../[android-jvm]-slow-start-call-policy/index.html">SlowStartCallPolicy</a> value</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="218508550%2FFunctions%2F-2013302931" anchor-label="setSubscriptionID" id="218508550%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-subscription-i-d.html"><span>set</span><wbr></wbr><span>Subscription</span><wbr></wbr><span><span>ID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="218508550%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-subscription-i-d.html"><span class="token function">setSubscriptionID</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> subscriptionID</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1063756968%2FFunctions%2F-2013302931" anchor-label="setTokenRealm" id="1063756968%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-token-realm.html"><span>set</span><wbr></wbr><span>Token</span><wbr></wbr><span><span>Realm</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1063756968%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-token-realm.html"><span class="token function">setTokenRealm</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> tokenRealm</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets the token used in anonymous calls.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="994136424%2FFunctions%2F-2013302931" anchor-label="setUsername" id="994136424%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-username.html"><span>set</span><wbr></wbr><span><span>Username</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="994136424%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-username.html"><span class="token function">setUsername</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> username</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets user name of user</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="171648365%2FFunctions%2F-2013302931" anchor-label="setVideoResolution" id="171648365%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-video-resolution.html"><span>set</span><wbr></wbr><span>Video</span><wbr></wbr><span><span>Resolution</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="171648365%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-video-resolution.html"><span class="token function">setVideoResolution</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/hardware/Camera.Size.html">Camera.Size</a> videoResolution</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets the desired video Resolution.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-460898860%2FFunctions%2F-2013302931" anchor-label="setWebSocketConnectionRetryLimit" id="-460898860%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-web-socket-connection-retry-limit.html"><span>set</span><wbr></wbr><span>Web</span><wbr></wbr><span>Socket</span><wbr></wbr><span>Connection</span><wbr></wbr><span>Retry</span><wbr></wbr><span><span>Limit</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-460898860%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-web-socket-connection-retry-limit.html"><span class="token function">setWebSocketConnectionRetryLimit</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span>int webSocketConnectionRetryLimit</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets the maximum number of times to retry the WebSocket connection in case the WebSocket connection fails.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1825319028%2FFunctions%2F-2013302931" anchor-label="setWebSocketConnectionTimeout" id="-1825319028%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-web-socket-connection-timeout.html"><span>set</span><wbr></wbr><span>Web</span><wbr></wbr><span>Socket</span><wbr></wbr><span>Connection</span><wbr></wbr><span><span>Timeout</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1825319028%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-web-socket-connection-timeout.html"><span class="token function">setWebSocketConnectionTimeout</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span>int timeoutInSeconds</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets connection timeout for WebSocket.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2045864705%2FFunctions%2F-2013302931" anchor-label="setWebSocketServerIp" id="2045864705%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-web-socket-server-ip.html"><span>set</span><wbr></wbr><span>Web</span><wbr></wbr><span>Socket</span><wbr></wbr><span>Server</span><wbr></wbr><span><span>Ip</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2045864705%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-web-socket-server-ip.html"><span class="token function">setWebSocketServerIp</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> webSocketServerIp</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets IP information used in web socket connection creation.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1321202311%2FFunctions%2F-2013302931" anchor-label="setWebSocketServerPort" id="1321202311%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-web-socket-server-port.html"><span>set</span><wbr></wbr><span>Web</span><wbr></wbr><span>Socket</span><wbr></wbr><span>Server</span><wbr></wbr><span><span>Port</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1321202311%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-web-socket-server-port.html"><span class="token function">setWebSocketServerPort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span>int webSocketServerPort</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets port information used in web socket connection creation.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="906488187%2FFunctions%2F-2013302931" anchor-label="setWebSocketWithTokenAuthentication" id="906488187%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-web-socket-with-token-authentication.html"><span>set</span><wbr></wbr><span>Web</span><wbr></wbr><span>Socket</span><wbr></wbr><span>With</span><wbr></wbr><span>Token</span><wbr></wbr><span><span>Authentication</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="906488187%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="set-web-socket-with-token-authentication.html"><span class="token function">setWebSocketWithTokenAuthentication</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span>boolean tokenAuthentication</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets webSocketAuthentication Mode If true, it uses token for webSocketConnection.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-953331835%2FFunctions%2F-2013302931" anchor-label="setxSessionId" id="-953331835%2FFunctions%2F-2013302931" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release"></a>
+          <div class="table-row" data-filterable-current=":SPiDR:MobileSDK:dokkaJavaDoc/release" data-filterable-set=":SPiDR:MobileSDK:dokkaJavaDoc/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="setx-session-id.html"><span>setx</span><wbr></wbr><span>Session</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-953331835%2FFunctions%2F-2013302931"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SPiDR:MobileSDK:dokkaJavaDoc/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span>void <a href="setx-session-id.html"><span class="token function">setxSessionId</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> xSessionId</span></span><span class="token punctuation">)</span></div><div class="brief ">Sets session id of user</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
