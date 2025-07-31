@@ -1,7 +1,7 @@
 # Ribbon WebRTC Android SDK - User Guide
 Version Number: **$SDK_VERSION$**
 <br>
-Revision Date: **Jun 27, 2025**
+Revision Date: **Jul 31, 2025**
 
 ## Mobile SDK overview
 
