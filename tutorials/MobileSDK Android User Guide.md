@@ -1,7 +1,7 @@
 # Ribbon WebRTC Android SDK - User Guide
 Version Number: **$SDK_VERSION$**
 <br>
-Revision Date: **Aug 29, 2025**
+Revision Date: **Oct 02, 2025**
 
 ## Mobile SDK overview
 
@@ -17,7 +17,7 @@ The Mobile SDK has the following characteristics:
 
 See [Appendix A: High-level Mobile SDK structure](#appendix-a-high-level-mobile-sdk-structure) for a high-level view of the Mobile SDK and its sub-modules.
 
-The Mobile SDK for Android is compatible with Android 4.1.x-9.x and has been tested on the Nexus 7, Nexus 5, Samsung Note 3, Samsung Note 5, Samsung S7, HTC Desire 626, HTC One A9, HTC 10, LG G2, LG G3, LG G5, LG G6, SONY XPERIA Z5, SONY XPERIA XZ, General Mobile GM 5+.
+The Mobile SDK for Android is compatible with Android 5+. The SDK supports IPv6 for Android.
 
 ### What's in this document?
 
@@ -190,13 +190,13 @@ The following is an example using the Mobile SDK in Android:
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <com.genband.mobile.core.webrtc.view.VideoView
+    <com.rbbn.mobile.core.webrtc.view.VideoView
         android:id="@+id/remoteVideoView"
         android:layout_width="120dp"
         android:layout_height="90dp"
         />
 
-    <com.genband.mobile.core.webrtc.view.VideoView
+    <com.rbbn.mobile.core.webrtc.view.VideoView
         android:id="@+id/localVideoView"
         android:layout_width="120dp"
         android:layout_height="90dp"
@@ -5192,8 +5192,8 @@ If ProGuard is enabled, RIBBON recommends adding one of the following configurat
 -allowaccessmodification
 
 #============================= MobileSDK ==============================#
-# Keep everything in com.genband.mobile
--keep class com.genband.mobile.** { *; }
+# Keep everything in com.rbbn.mobile
+-keep class com.rbbn.mobile.** { *; }
 -keep class org.webrtc.** { *; }
 
 # For generic types, see https://www.guardsquare.com/en/products/proguard/manual/usage/attributes
@@ -5218,8 +5218,8 @@ The following configuration makes debugging more difficult.
 
 #============================= MobileSDK ==============================#
 # Keep only publics with SDPObserver
--keep public class com.genband.mobile.** { *; }
--keep class com.genband.mobile.core.webrtc.SDPObserver { *; }
+-keep public class com.rbbn.mobile.** { *; }
+-keep class com.rbbn.mobile.core.webrtc.SDPObserver { *; }
 # Keep all in webrtc
 -keep class org.webrtc.** { *; }
 
@@ -5259,10 +5259,10 @@ This configuration obfuscates the MobileSDK API as much as possible while avoidi
 -keep class org.webrtc.** { *; }
  
 # Keep all classes that should not be obfuscate
--keep class com.genband.mobile.api.utilities.LogManager { *; }
--keep class com.genband.mobile.core.webrtc.view.SMSurfaceViewRenderer { *; }
--keep class com.genband.mobile.core.webrtc.SDPObserver { *; }
--keep class com.genband.mobile.core.webrtc.WebRTCCall$* { *; }
+-keep class com.rbbn.mobile.api.utilities.LogManager { *; }
+-keep class com.rbbn.mobile.core.webrtc.view.SMSurfaceViewRenderer { *; }
+-keep class com.rbbn.mobile.core.webrtc.SDPObserver { *; }
+-keep class com.rbbn.mobile.core.webrtc.WebRTCCall$* { *; }
 
 # For native methods, see http://proguard.sourceforge.net/manual/examples.html#native
 -keepclasseswithmembernames class * {
@@ -5300,7 +5300,7 @@ void retrieveHMACToken() {
         String[] splittedUsername = CryptoUtils.splitUsername(userNameText.getText().toString());
         HashMap<String,String> requestMap=new HashMap<>();
 ​
-        String requestUrl = "https://sr1.genband.com/rest/version/1/application/JLAdapter/authenticationToken";
+        String requestUrl = "https://sr1.rbbn.com/rest/version/1/application/JLAdapter/authenticationToken";
         requestMap.put("requestURL",requestUrl);
         requestMap.put("subscriberId",splittedUsername[0]);
         requestMap.put("organizationId",splittedUsername[1]);
@@ -5453,7 +5453,7 @@ fun retreiveHMACToken {
     val splittedUsername: Array<String> = CryptoUtils.splitUsername("username")
     val requestMap = HashMap<String, String>()
 ​
-    val requestUrl = "https://sr1.genband.com/rest/version/1/application/JLAdapter/authenticationToken"
+    val requestUrl = "https://sr1.rbbn.com/rest/version/1/application/JLAdapter/authenticationToken"
     requestMap["requestURL"] = requestUrl
     requestMap["subscriberId"] = splittedUsername[0]
     requestMap["organizationId"] = splittedUsername[1]

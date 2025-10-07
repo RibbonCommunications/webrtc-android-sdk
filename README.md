@@ -27,8 +27,3 @@ Compatible WebRTC GW Server versions :
 * WebRTC GW 4.10.0
 
 * WebRTC GW 4.9.1
-
-Tested on :
-
-* Nexus 5, Samsung Note 3, Samsung Note 5, Samsung S7, LG G2, LG G3, LG G5, LG G6, HTC Desire 626, HTC One A9, HTC 10, SONY XPERIA Z5, SONY XPERIA XZ, General Mobile GM 5+
-

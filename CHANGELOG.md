@@ -5,6 +5,8 @@ Ribbon WebRTC Android SDK change log.
 - This project adheres to [Semantic Versioning](http://semver.org/).
 - This change log follows [keepachangelog.com](http://keepachangelog.com/) recommendations.
 
+## 6.38.0 - 2025-02-10
+
 ## 6.37.0 - 2025-29-08
 ### Added
 - TURN/STUN Address Management in Demo App
@@ -17,48 +19,48 @@ Ribbon WebRTC Android SDK change log.
 ### Changed
 - User Guide documentation updated. `KAE-1592`
 
-## 6.34.0 - 2025-04-30
+## 6.34.0 - 2025-30-04
 
-## 6.33.0 - 2025-03-12
+## 6.33.0 - 2025-12-03
 
-## 6.32.0 - 2024-11-29
+## 6.32.0 - 2024-29-11
 
-## 6.31.0 - 2024-11-01
+## 6.31.0 - 2024-01-11
 
-## 6.30.0 - 2024-09-23
+## 6.30.0 - 2024-23-09
 
 ### Changed
 - Call Service migrated to Kotlin `KAE-1580`
 
-## 6.29.0 - 2024-08-20
+## 6.29.0 - 2024-20-08
 
 ### Changed
 - WebRTC migrated to Kotlin `KAE-1578`
 
-## 6.28.0 - 2024-07-23
+## 6.28.0 - 2024-23-07
 
-## 6.27.0 - 2024-06-24
+## 6.27.0 - 2024-24-06
 
 ### Changed
 - Rest Manager migrated to Kotlin `KAE-1570`
 
-## 6.26.0 - 2024-05-24
+## 6.26.0 - 2024-24-05
 
 ### Changed
 - Notification Engine migrated to Kotlin `KAE-1567`
 
-## 6.25.0 - 2024-04-29
+## 6.25.0 - 2024-29-04
 
-## 6.24.0 - 2024-03-29
+## 6.24.0 - 2024-29-03
 
-## 6.23.0 - 2024-02-26
+## 6.23.0 - 2024-26-02
 
-## 6.22.2 - 2024-02-20
+## 6.22.2 - 2024-20-02
 
 ### Changed
 - ScaleType xml resource name changed
 
-## 6.22.1 - 2024-02-06
+## 6.22.1 - 2024-06-02
 
 ### Changed
 - Maven Artifactory server is changed
@@ -67,23 +69,23 @@ Ribbon WebRTC Android SDK change log.
 - Maven Artifactory server is now reachable
 - Javadoc paths is reconfigured with requirements of Gradle 8.5-rc-1
 
-## 6.22.0 - 2023-01-30
+## 6.22.0 - 2023-30-01
 
-## 6.21.0 - 2023-12-29
+## 6.21.0 - 2023-29-12
 
-## 6.20.0 - 2023-12-07
+## 6.20.0 - 2023-07-12
 
 ### Added 
 - Upgrading WebRTC to M118. `KAE-1544`
 
-## 6.19.0 - 2023-11-14
+## 6.19.0 - 2023-14-11
 
 ### Added 
 - Build Gradle version updated to 8.5-rc-1 `KAE-1542`
 
-## 6.18.0 - 2023-10-04
+## 6.18.0 - 2023-04-10
 
-## 6.17.0 - 2023-09-04
+## 6.17.0 - 2023-04-09
 
 ### Added 
 - Build Gradle version updated to 6.5 `KAE-1533`
@@ -91,11 +93,11 @@ Ribbon WebRTC Android SDK change log.
 ### Changed
 - Sending GET request for Call State to initiate Incoming Call `KAE-1535`
 
-## 6.16.0 - 2023-08-03
+## 6.16.0 - 2023-03-08
 
-## 6.15.0 - 2023-07-04
+## 6.15.0 - 2023-04-07
 
-## 6.14.0 - 2023-05-30
+## 6.14.0 - 2023-30-05
 
  ### Added
  - KAE-1503 Added External Audio Source 
@@ -322,4 +324,4 @@ Ribbon WebRTC Android SDK change log.
 ## 4.5.9 - 2019-05-02
 
 ### Changed
-- Package name for VideoView is changed to "com.genband.mobile.core.webrtc.view". `KAE-368`
+- Package name for VideoView is changed to "com.rbbn.mobile.core.webrtc.view". `KAE-368`
