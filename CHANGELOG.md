@@ -4,6 +4,14 @@ Ribbon WebRTC Android SDK change log.
 
 - This project adheres to [Semantic Versioning](http://semver.org/).
 - This change log follows [keepachangelog.com](http://keepachangelog.com/) recommendations.
+## 6.41.0 - 2026-29-01
+### Added
+- WebRTC Upgrade to M142 `KAE-1626`
+- google-services.json file to integrate Firebase services
+### Fixed
+- Transfer session updates to prevent premature call end `KAE-1077`
+- Call screen not closing after transfer ends `KAE-1285`
+
 ## 6.40.0 - 2025-10-12
 
 ## 6.39.0 - 2025-30-10
